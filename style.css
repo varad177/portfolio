@@ -30,7 +30,7 @@ body {
 
 /* navbar */
 .navbar {
-    position: fixed;
+    position: sticky;
     width: 100%;
     display: flex;
     background-color: rgba(128, 128, 128, 0.404);
@@ -56,6 +56,7 @@ body {
     background-color: white;
 
 
+
 }
 
 .logo h1 {
@@ -64,16 +65,27 @@ body {
     font-weight: bolder;
 }
 
+
+
+
+
 .navlinks ul {
     display: flex;
-    flex-direction: row;
-    gap: 22px;
     margin-right: 40px;
+    gap: 20px;
+
+
 }
 
-.navlinks ul a {
-    font-size: 22px
+
+
+
+.navlinks ul li a {
+    font-weight: 400;
+    line-height: 30px;
 }
+
+
 
 
 /* name box */
@@ -160,7 +172,7 @@ body {
     height: 40px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 25px;
 }
@@ -172,7 +184,7 @@ body {
 }
 
 /* footer */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +193,85 @@ footer{
     bottom: 8px;
     overflow: hidden;
 }
-footer p{
-    color: white;
+
+footer p {
+    color: rgb(255, 255, 255);
+}
+
+/* sidebar */
+.hamburger .fa {
+    font-size: 20px;
+    height: 30px;
+    color: black;
+    width: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid white;
+    display: none;
+}
+
+/* respnsive code */
+@media (max-width:800px) {
+    .navbar {
+        display: inline;
+        /* display: flex; */
+        position: absolute;
+        background: rgba(255, 255, 255, 0.653);
+        border: none;
+        /* border-bottom: 2px solid white; */
+
+
+
+    }
+
+
+    .navlinks {
+        position: absolute;
+        height: 90vh;
+        /* border: 2px solid greenyellow; */
+        width: 100%;
+        background-color: black;
+        left: 0;
+        right: 0;
+        z-index: 11;
+       display: none;
+       
+    
+    }
+
+    .show{
+        display: block;
+    }
+
+    
+
+    .navlinks ul {
+        text-align: center;
+        margin-top: 20px;
+        flex-direction: column;
+
+
+
+
+    }
+
+    .navlinks ul li {
+        margin: 20px 0;
+        display: block;
+
+    }
+
+    .navlinks ul li a {}
+
+    .hamburger .fa {
+        top: 18px;
+        position: absolute;
+        right: 10px;
+        display: block;
+    }
+
+
 }
