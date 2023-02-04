@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#home::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('images/myimg2.jpeg') no-repeat center center/cover;
+    
+}
+
+.homebox{
+    /* margin: 20px 20px; */
+    /* border: 2px solid red; */
+    width: 47vw;
+    height: 36vh;
+    margin-left: 44vw;
+    margin-top: 19vh;
+    position: absolute;
+}
+
+.homecontent{
+    margin: auto;
+    /* border: 2px solid white; */
+     
+ }
+ 
+ .homecontent p{
+     font-size: 18px;
+     display: inline;
+     
+ }
+ 
+ /* name box */
+.name{
+   
+    height: 100px;
+    
+}
+.name h1{
+    font-size: 33px;
+}
+
+.navbar{
+    background-color: black;
+
+
+}
+
+.btn {
+   
+
+    margin: 22px -17px;
+    padding: 7px 9px;
+    border-radius: 12px;
+   
+    font-size: 18px;
+   
+    cursor: pointer;
+    width: 175px;
+    transition: all .3s;
+    text-align: center;
+    height: 40px;
+}
+
+.buttons{
+    display: block;
+}
+
+.logo {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+  
+   
+}
+.logo h1{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.navlinks ul {
+   /* display: flex; */
+   /*   flex-direction: row;
+    gap: 22px;
+    margin-right: 40px; */
+    display: none;
+}
+
+.navlinks ul a {
+    font-size: 22px
+}

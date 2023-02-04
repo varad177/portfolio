@@ -1,0 +1,186 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* home */
+
+
+#home::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('images/myimg.jpeg') no-repeat center center/cover;
+
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.404);
+    height: 70px;
+    /* border: 2px solid greenyellow; */
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+
+}
+
+.logo {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+
+
+}
+
+.logo h1 {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.navlinks ul {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    margin-right: 40px;
+}
+
+.navlinks ul a {
+    font-size: 22px
+}
+
+
+/* name box */
+.name {
+
+    height: 100px;
+
+}
+
+.name h1 {
+    font-size: 3.7rem;
+}
+
+/* animation for varad */
+
+#myname {
+
+    animation: names;
+    animation-iteration-count: infinite;
+    animation-duration: .8s;
+}
+
+@keyframes names {
+    0% {}
+
+    25% {}
+
+    50% {
+        text-decoration: underline;
+    }
+
+    75% {
+        font-weight: bolder;
+    }
+
+    100% {
+        text-decoration: underline;
+    }
+}
+
+.homebox {
+    /* border: 2px solid red; */
+    width: 51vw;
+    height: 63vh;
+    margin-left: 44vw;
+    margin-top: 25vh;
+    position: absolute;
+}
+
+.homecontent {
+    margin: auto;
+    /* border: 2px solid white; */
+
+
+}
+
+.homecontent p {
+    font-size: 3.6rem;
+    display: inline;
+
+}
+
+
+/* Cv button */
+.btn {
+    color: #fff;
+
+    margin: 22px 10px;
+    padding: 7px 9px;
+    border-radius: 12px;
+    background-color: #4C43CD;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 19px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    width: 190px;
+    transition: all .3s;
+    text-align: center;
+    height: 40px;
+}
+
+.buttons{
+    display: flex;
+    gap: 25px;
+}
+
+
+.btn:hover {
+    background-color: #756bff;
+    border-radius: 18px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    position: fixed;
+    bottom: 8px;
+    overflow: hidden;
+}
+footer p{
+    color: white;
+}
