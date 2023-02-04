@@ -11,12 +11,13 @@
     <script src="https://kit.fontawesome.com/b0a4a992bb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@1,300&family=Roboto&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@1,300&family=Roboto&display=swap"
         rel="stylesheet">
 
 
+
 </head>
+
 
 <body>
     <section id="home">
@@ -25,9 +26,12 @@
             <div class="logo">
                 <h1>VD</h1>
             </div>
-            <div class="navlinks">
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navlinks ">
                 <ul>
-                    <li><a href="#">About Me</a></li>
+                    <li><a class="active" href="#">About Me</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Qualification</a></li>
@@ -67,6 +71,18 @@
             <p>Copyright &#169 2023- all rights are reserved </p>
         </footer>
     </section>
+     <script>
+
+        const nav = document.querySelector('.navlinks');
+    
+        const hamburger = document.querySelector('.fa')
+        hamburger.addEventListener('click', () => {
+            document.querySelector('.navlinks').classList.toggle('show')
+
+
+
+        });
+    </script> 
 
 </body>
 
