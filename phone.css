@@ -49,6 +49,7 @@
 
 .navbar{
     background-color: black;
+ 
 
 
 }
@@ -77,6 +78,7 @@
 
 
     display: flex;
+
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -92,15 +94,21 @@
     color: black;
     font-weight: bolder;
 }
+.navlinks ul li{
+    border-bottom: 2px solid white;
+    margin-left: 32px;
+  padding: 8px;
+   
+}
 
-.navlinks ul {
-   /* display: flex; */
-   /*   flex-direction: row;
-    gap: 22px;
-    margin-right: 40px; */
-    display: none;
+.navlinks ul li:active{
+ 
+    font-weight: 700;
+    text-decoration: underline;
+
 }
 
 .navlinks ul a {
     font-size: 22px
+    
 }
