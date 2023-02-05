@@ -11,7 +11,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('images/myimg2.jpeg') no-repeat center center/cover;
+    background: url('images/mobimg.png') no-repeat center center/cover;
     
 }
 
@@ -112,3 +112,54 @@
     font-size: 22px
     
 }
+.contactcontent{
+    flex-direction: column;
+    margin-top: 0;
+}
+
+
+.contactcontent h1{
+  
+    font-size: 2rem;
+}
+
+.contactmain{
+    gap: 20px;
+}
+
+.contactlogos{
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    gap: 4.2rem;
+}
+
+.contactcontent{
+    
+    margin-top: 15vh;
+    height: 5vh;
+
+    
+
+}
+
+.contactmain{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contactlogos{
+    
+    gap: 2.2rem;
+    height: 66vh;
+}
+
+.contactlogos  i{
+ 
+    font-size: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
