@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,11 @@
     <script src="https://kit.fontawesome.com/b0a4a992bb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@1,300&family=Roboto&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@1,300&family=Roboto&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <section id="about">
         <nav class="navbar">
@@ -24,17 +27,48 @@
             </div>
             <div class="navlinks ">
                 <ul>
-                    <li><a class="active" href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Qualification</a></li>
                     <li><a href="#">My Works</a></li>
                     <li><a href="#">Projects</a></li>
+                    <li><a href="#">Hobbies</a></li>
                 </ul>
             </div>
 
         </nav>
-
+        <div class="about">
+        <div class="aboutheading">
+            <h1>About <p id="me">Me</p>
+            </h1>
+        </div>
+        <div class="aboutcontent">
+            <p>
+                Varad this side.<br>
+            Student at DMCE, Airoli (Computer Engineering)<br>
+            I like to develop the projects <br>
+            I have done many front-end project with the help of HTML and css. <br>
+            I'm doing my best to get the full knowledge about back-end <br>
+            trying to be FULL-STACK WEB-DEVELOPER <br>
+            Currently practicing DSA
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &#169 2023- all rights are reserved </p>
+    </footer>
     </section>
+    <script>
+
+        const nav = document.querySelector('.navlinks');
+
+        const hamburger = document.querySelector('.fa')
+        hamburger.addEventListener('click', () => {
+            document.querySelector('.navlinks').classList.toggle('show')
+
+        });
+    </script>
 </body>
+
 </html>
