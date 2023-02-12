@@ -349,7 +349,7 @@ footer p {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 8.2rem;
+    gap: 8.5rem;
     height: 35vh;
 }
 
@@ -397,6 +397,10 @@ footer p {
 #insta:hover {
     color: rgb(255, 40, 119);
 
+}
+
+#gmail{
+    color: red;
 }
 
 .contactlogos a i:hover {
