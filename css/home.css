@@ -1,0 +1,154 @@
+/* <div class="name">
+<h1>Hello! I Am <span id="myname">Varad</span>.
+</h1>
+</div> 
+ <div class="buttons">
+                <div class="btn"><a href="varad_cv.pdf" download="">DOWNLOAD CV</a></div>
+                <div class="btn"><a href="https://wa.link/fll4sc" target="_blank">CHAT WITH ME</a></div>
+            </div>
+*/
+
+.homebox {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    gap: 50px;
+    background-color: rgba(128, 128, 128, 0.087);
+}
+
+.homecontent {
+    /* border: 2px solid greenyellow; */
+    background-color: black;
+    height: 50vh;
+    width: 48%;
+    min-width: 380px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hometext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.hometext span {
+    color: #FFD700;
+    position: relative;
+
+}
+
+.homecontent h2 {
+    font-size: 2.4rem;
+}
+
+.homecontent h1 {
+    font-size: 2.4rem;
+}
+
+.bitmoji {
+    /* border: 2Px solid green; */
+    border-radius: 80px;
+    margin: 20px;
+    box-shadow: 0 0 1.6rem #FFD700;
+
+}
+
+.bitmoji img {
+    height: 300px;
+    width: 300px;
+    border-radius: 80px;
+    border: 3px solid white;
+}
+
+/* buttons */
+.btn {
+    color: #fff;
+
+    margin: 22px 10px;
+    padding: 7px 9px;
+    border-radius: 12px;
+    background-color: #4C43CD;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 19px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    width: 190px;
+    transition: all .3s;
+    text-align: center;
+    height: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+
+.btn:hover {
+    background-color: #756bff;
+    border-radius: 18px;
+}
+
+@media (max-width:800px) {
+    .homebox {
+        flex-direction: column-reverse;
+        gap: 10px;
+
+    }
+
+    .bitmoji {
+        margin-top: 100px;
+
+        /* margin: 12px; */
+    }
+
+    .bitmoji img {
+        height: 250px;
+        width: 250px;
+        /* border-radius: 100px; */
+    }
+
+    .homecontent {
+        /* height: 30vh; */
+        justify-content: start;
+
+        /* align-items: center; */
+    }
+
+    .homecontent h2 {
+        font-size: 1.8rem;
+    }
+
+    .homecontent h1 {
+        font-size: 1.8rem;
+
+
+    }
+
+    .buttons {
+        flex-direction: column;
+
+
+    }
+
+    .btn {
+        margin: 4px 4px;
+
+    }
+}
