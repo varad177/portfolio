@@ -109,6 +109,7 @@
     .homebox {
         flex-direction: column-reverse;
         gap: 10px;
+     background-color: black;
 
     }
 
