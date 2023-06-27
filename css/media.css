@@ -1,0 +1,497 @@
+/* home */
+
+
+@media(max-width:1000px) {
+
+
+    .about {
+        height: 112vh;
+    }
+
+    .skill {
+        height: 136vh;
+    }
+
+    .projects {
+        height: 228vh;
+    }
+
+    .education {
+        height: 119vh;
+    }
+
+    .footer {
+        height: 80vh;
+    }
+}
+
+@media(max-width:800px) {
+
+
+    .aboutHeading {
+        margin-top: 4rem;
+    }
+
+    .about {
+        /* border: 3px solid greenyellow; */
+        height: 180vh;
+        /* margin-top: 18rem; */
+    }
+
+    .aboutElement {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .aboutHeading {
+        margin-top: 1rem;
+    }
+
+    .aboutContent {
+        width: 80%;
+        /* gap: 1rem; */
+    }
+
+    .aboutimg {
+
+        width: 48%;
+        height: 90%;
+    }
+
+    .aboutimg img {
+        width: 100%;
+        /* height: 100%; */
+
+
+    }
+
+    .skill {
+        height: 150vh;
+    }
+
+    .education {
+        height: 146vh;
+    }
+
+    .projects {
+        height: 260vh;
+    }
+
+    .contact {
+        height: 126vh;
+    }
+
+    #footerIcons a i {
+        font-size: 18px;
+
+    }
+
+}
+
+
+@media (max-width:600px) {
+
+    #particles-js {
+        /* border: 3px solid red; */
+        height: 120vh;
+        width: 100%;
+
+        /* background-color: rgb(244, 244, 253); */
+
+    }
+
+    .home-section {
+        height: 111vh;
+    }
+
+    .homecontainer {
+        margin-top: 2rem;
+    }
+
+    .homecontainer {
+        /* margin-top: 2rem; */
+        padding: 0.5rem;
+        flex-direction: column;
+    }
+
+    .hometext {
+        /* margin-top: 5rem; */
+        width: 90%;
+    }
+
+    .homeimg img {
+        width: 100%;
+        height: 100%;
+        border-radius: 40%;
+        border: 2px solid white;
+        outline: none;
+        box-shadow: 0 5px 10px 10px;
+
+    }
+
+    .skill {
+        height: 230vh;
+    }
+
+    .education {
+        height: 246vh;
+    }
+
+    .projects {
+        height: 615vh;
+    }
+
+    .contact {
+        /* flex-direction: column; */
+        height: 174vh;
+    }
+
+    .contactContent {
+        flex-direction: column;
+        /* justify-content: space-around; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactImg {
+        width: 70%;
+    }
+
+    .contactForm {
+        width: 70%;
+        margin: 1rem;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .aabhar {
+        width: 90%;
+        border-radius: 12px;
+        margin: 0.5rem;
+    }
+
+    .quickLinks {
+        width: 90%;
+        border-radius: 12px;
+        margin: 0.5rem;
+    }
+
+    .contactInfo {
+        width: 90%;
+        border-radius: 12px;
+        margin: 0.5rem;
+    }
+
+    .footer {
+        height: 162vh;
+    }
+
+    .EndOfWebsite {
+        margin: 1.5rem;
+        height: 8%;
+
+    }
+
+}
+
+
+
+@media (max-width:400px) {
+    .homecontainer {
+        margin-top: -2rem;
+    }
+
+    .hometext h2 {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        height: 162vh;
+    }
+
+    .aboutimg {
+        width: 65%;
+    }
+
+    .projects {
+        height: 538vh;
+    }
+
+    .contactImg {
+        width: 89%;
+    }
+
+    .contactForm {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .letsChat {
+        width: 85%;
+
+    }
+
+    .contact {
+        height: 164vh;
+    }
+
+    .aabhar {
+        margin-top: 2rem;
+    }
+
+    .EndOfWebsite {
+        margin-top: 3.5rem;
+    }
+
+    .EndOfWebsite h5 {
+        font-size: 1rem;
+    }
+}
+
+/* projects */
+
+@media (max-width:1100px) {
+    .projectsBTN {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width:351px) {
+    .about {
+        height: 170vh;
+    }
+
+    .aboutimg {
+        width: 68%;
+
+    }
+
+    .projects {
+        height: 554vh;
+    }
+
+    .contact {
+        height: 170vh;
+    }
+
+    .aabhar {
+        margin-top: 5rem;
+    }
+
+    .EndOfWebsite {
+        margin-top: 5.5rem;
+    }
+
+    .EndOfWebsite h5 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:740px) {
+    .education {
+        height: 242vh;
+    }
+
+    .projects {
+        /* max-width: 660vh; */
+        height: 660vh;
+    }
+
+}
+
+
+
+
+
+
+/* skill */
+
+@media (max-width:600px) {
+
+
+    .fourSkillsBox {
+        flex-direction: column;
+    }
+
+    .twoSkillsBox {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:400px) {
+    .skill {
+        height: 231vh;
+    }
+
+}
+
+@media (max-width:435px) {
+    .education {
+        height: 244vh;
+    }
+
+    .projects {
+
+        height: 548vh;
+    }
+
+    .letsChat {
+        width: 75%;
+    }
+}
+
+@media (max-width:391px) {
+    .about {
+        height: 119vh;
+    }
+
+    .skill {
+        height: 165vh;
+    }
+
+    .education {
+        height: 177vh;
+    }
+
+    .projects {
+        height: 389vh;
+    }
+
+    .contact {
+        height: 116vh;
+    }
+
+
+}
+
+
+/* (max-width:400px) and (min-width:900px) */
+
+
+
+
+
+
+/* others */
+
+@media (max-width:995px) {
+    nav .nav-item {
+        padding: .5rem .5rem;
+    }
+
+    nav .nav-link {
+        font-size: 1.1rem;
+        border-bottom: 2px solid white;
+        color: var(--headcolor);
+        /* transition: all 0.2s ease-in; */
+
+    }
+
+}
+
+
+@media (max-width:395px) {
+
+    .about {
+        height: 135vh;
+    }
+
+    .skill {
+        height: 166vh;
+    }
+
+    .education {
+        height: 181vh;
+    }
+
+    .projects {
+        height: 385vh;
+    }
+
+    .contact {
+        height: 120vh;
+    }
+
+
+
+}
+
+@media (max-width:381px) {
+    .about {
+        height: 163vh;
+    }
+
+    .skill {
+        height: 228vh;
+    }
+
+    .education {
+        height: 242vh;
+    }
+
+    .projects {
+        height: 534vh;
+    }
+
+    .contact {
+        height: 161vh;
+    }
+
+
+}
+
+
+@media (max-width:361px) {
+    .projects {
+        height: 540vh;
+    }
+
+}
+
+@media (max-width:351px) {
+    .about {
+        height: 170vh;
+    }
+
+    .projects {
+        height: 551vh;
+    }
+
+    .contact {
+        height: 167vh;
+    }
+
+
+
+}
+
+@media (max-width: 331px) {
+    .about {
+        height: 174vh;
+    }
+
+    .education {
+        height: 250vh;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1100px)  {
+  .skill{
+    height: 134vh;
+  }   
+
+  .projects{
+    height: 213vh;
+  }
+}

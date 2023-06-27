@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+:root {
+    --headcolor: #FFD700
+}
+
+#particles-js {
+    /* border: 3px solid red; */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+
+    /* background-color: rgb(244, 244, 253); */
+
+}
+
+.home-section {
+
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.resumebtn .btn {
+    padding: 1.7rem 3rem;
+    border-radius: 0.5em;
+    transition: 0.3s;
+    /* color: #fff; */
+    background: #2506ad;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    font-family: "Nunito", sans-serif;
+}
+
+.work .viewall {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* navbar section */
+
+/* hamburget */
+
+/*  */
+
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+
+
+
+
+.hamburger {
+  
+  
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+/* HAMBURGER 1 */
+.checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+
+
+/*  */
+
+nav {
+   
+    border-bottom: .5px solid white;
+    background-color: black;
+    box-shadow: 5px 5px;
+    position: sticky;
+
+}
+
+nav .navbar-brand {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 3rem;
+    padding: 10px 14px;
+}
+
+nav .navbar-brand span {
+    color: var(--headcolor);
+}
+
+nav .nav-item {
+    padding: 1rem .5rem;
+}
+
+nav .nav-link {
+    font-size: 1.1rem;
+    color: var(--headcolor);
+    /* transition: all 0.2s ease-in; */
+
+}
+
+nav .nav-link:hover {
+    color: white;
+    font-size: 1.13rem;
+
+}
+
+/* scroll top starts */
+#scroll-top {
+    position: fixed;
+    top: -140%;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    background: #ffae00;
+    color: rgb(80, 6, 253);
+    border-radius: 5rem;
+    transition: 1s linear;
+    z-index: 1000;
+}
+
+#scroll-top.active {
+    top: calc(100% - 12rem);
+}
+
+/* scroll top ends */
+
+/* footer */
+
+.footer {
+    height: 60vh;
+    width: 100%;
+    padding: 2rem;
+    background-color: #011439;
+}
+
+.footerContent {
+    /* border: 2px solid yellow; */
+    height: 80%;
+    width: 100%;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerContent h3 {
+    color: var(--headcolor);
+}
+
+
+.contactInfo {
+    width: 32%;
+    /* border: 2px solid white; */
+    height: 100%;
+    padding: 1rem;
+    /* display: flex; */
+    color: white;
+    background-color: #010e26;
+    border-radius: 10%;
+
+
+}
+
+.contactInfo i {
+    color: var(--headcolor);
+}
+
+.quickLinks {
+    width: 32%;
+    /* border: 2px solid rgb(225, 24, 24); */
+    height: 100%;
+    color: white;
+    padding: 1rem;
+    background-color: #010e26;
+    border-radius: 10%;
+}
+
+.quickLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.quickLinks a i {
+    color: var(--headcolor);
+}
+
+.aabhar {
+    width: 32%;
+    /* border: 2px solid rgb(255, 255, 255); */
+    height: 100%;
+    color: white;
+    padding: 1rem;
+    background-color: #010e26;
+    border-radius: 10%;
+}
+
+.EndOfWebsite {
+    margin: 1rem;
+    /* border: 2px solid pink; */
+    background-color: #010e26;
+    border-radius: 12px;
+
+    height: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* //scroll up */
+
+.scrollTop{
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    right: 2rem;
+    margin: 3rem;
+    position: fixed;
+}

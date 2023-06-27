@@ -1,0 +1,46 @@
+.education {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 135vh;
+    width: 100%;
+    background-color: #D7DBDD;
+}
+
+.educationheading {
+    /* margin: 1rem; */
+    padding: 1.2rem;
+}
+
+.edubox {
+    display: flex;
+}
+
+.card-body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.educontentbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .eduimg img{
+    height: 4rem;
+    width: 4rem;
+} */
+
+.card-body h4{
+    color: rgb(3, 156, 3);
+}
+
+/* .img-fluid {
+    max-width: 89%;
+    height: auto;
+} */

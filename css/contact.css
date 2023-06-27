@@ -1,0 +1,96 @@
+.contact {
+    width: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+    height: 120vh;
+    background-color: #F4F6F7;
+    padding: 2rem;
+}
+
+.contactContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 2px solid yellow; */
+}
+
+.contactImg {
+    width: 45%;
+    /* border: 2px solid red; */
+}
+
+.contactImg img {
+    border-radius: 12px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 4px black;
+}
+
+.contactForm {
+    width: 45%;
+    padding: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    box-shadow: 3px 3px 4px black;
+}
+
+.contactForm input {
+    font-weight: bolder;
+    color: black;
+    
+    /* border: 2px solid black; */
+}
+
+.contactForm button{
+    background-color: #E74C3C;
+    border: 2px solid #E74C3C;
+}
+
+.contactForm button:hover{
+    background-color: #a73427;
+    border: 2px solid #a73427;
+}
+
+
+/* lets chat */
+.letsChat{
+    /* width: 10rem;
+    height: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 40%;
+    background-color: rgb(128, 243, 128);
+}
+.letsChat a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+
+}
+
+.letsChat a i{
+     font-size: 1.5rem;
+    font-weight: bolder;
+   
+}
+
+.letsChat a:hover{
+    color: white;
+}
+
+.letsChat:hover{
+    background-color: rgb(17, 138, 17);
+
+
+}
+
+.letsChat a i:hover{
+    color: white;
+
+}

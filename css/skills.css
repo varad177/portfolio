@@ -1,0 +1,80 @@
+.skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 120vh;
+    width: 100%;
+    background-color: #57059e;
+}
+
+.skillsheading {
+    padding: 2rem 0;
+}
+
+.skillBoxes {
+    background-color: #3c0a69;
+    padding: 1rem;
+    margin: 1rem;
+    flex-direction: column;
+    /* border: 2px solid red; */
+
+    border-radius: 12px;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+
+}
+
+.fourSkillsBox {
+    /* padding: 1rem; */
+    /* padding: 1rem; */
+
+    /* border-radius: 8%; */
+    width: 98%;
+    /* height: 5rem; */
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.twoSkillsBox {
+    /* padding: 1rem; */
+    justify-content: space-between;
+    align-items: center;
+
+    width: 49%;
+    /* border: 3px solid palegreen; */
+    display: flex;
+}
+
+.singleSkillBox {
+    margin: 0.5rem;
+    background-color: black;
+    padding: 1rem;
+    width: 49%;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8%;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px white;
+    
+}
+.singleSkillBox:hover{
+    box-shadow: 3px 3px 6px rgb(255, 255, 255);
+    
+
+}
+
+.singleSkillBox img {
+    height: 4rem;
+    width: 4rem;
+
+}
+
+.singleSkillBox strong {
+    color: white;
+}

@@ -1,0 +1,28 @@
+
+
+.projects{
+    height: 170vh;
+    width: 100%;
+    background-color: #052a42;
+    padding: 2rem;
+}
+
+
+
+.projectsBTN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top: 2px solid black; */
+    background-color: yellow;
+}
+
+.card-body h5{
+    color: orangered;
+    font-weight: bolder;
+
+}
+.card-body p{
+    font-weight: bold;
+}
+

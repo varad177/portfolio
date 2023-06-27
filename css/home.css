@@ -1,0 +1,257 @@
+:root {
+    --headcolor: #FFD700
+}
+
+/* the hii  imoji */
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.home-section{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.homecontainer {
+    /* border-bottom: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    padding: 1.2rem;
+    z-index: -1;
+    
+
+}
+
+.homeimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    width: 45%;
+}
+
+.homeimg img {
+    width: 70%;
+    height: 30%;
+    border-radius: 40%;
+    border: 2px solid white;
+    outline: none;
+    box-shadow: 0 5px 10px 10px;
+
+}
+
+
+.hometext {
+    /* border: 2px solid pink; */
+    width: 45%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+
+}
+
+.hometext h2 {
+    font-size: 2rem;
+}
+
+.hometext span {
+    color: #FFD700;
+    position: relative;
+
+}
+
+/* towards about buttons */
+.towardsAbout {
+    margin: 1rem 1rem;
+    transform: translate(0, 0);
+
+}
+
+.link_towardsAbout {
+    position: relative;
+}
+
+.link_towardsAbout a {
+    border-radius: 15px;
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #000000;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: var(--headcolor);
+    transition: all .35s;
+}
+
+.link_towardsAbout a:hover {
+    width: 200px;
+    border: 2px solid var(--headcolor);
+    background: transparent;
+    color: white;
+}
+
+.link_towardsAbout a:hover+.icon {
+    border: 3px solid var(--headcolor);
+    right: -25%;
+}
+
+
+/* CONTACT LOGOS */
+
+
+.hometext .socialIcons {
+    /* border: 3px solid white; */
+    /* height: 2.5rem; */
+    /* width: 90%; */
+    margin: 0.8rem 0.5rem;
+
+}
+
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+
+.socialIcons i {
+
+    font-size: 2rem;
+
+    transition: all 0.5s;
+
+}
+
+#linked {
+    color: rgb(17, 106, 215);
+
+
+}
+
+#linked:hover {
+    color: rgb(45, 135, 245);
+
+}
+
+#wp {
+    color: rgb(26, 222, 26);
+}
+
+#wp:hover {
+    color: rgb(13, 255, 13);
+}
+
+#fb {
+    color: rgb(35, 137, 220);
+}
+
+#fb:hover {
+    color: rgb(43, 160, 255);
+}
+
+#git {
+    color: rgb(255, 255, 255);
+}
+
+#git:hover {
+    color: rgb(255, 255, 255);
+}
+
+#insta {
+    color: rgb(232, 23, 100);
+
+}
+
+#insta:hover {
+    color: rgb(255, 40, 119);
+
+}
+
+#gmail {
+    color: red;
+}
+
+.socialIcons a i:hover {
+    font-size: 2.1rem;
+}
+
+
+/* ------------------------------------ */
+/* the responsive code  */
