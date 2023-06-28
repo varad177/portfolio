@@ -45,7 +45,8 @@
     <div id="home" class="home-section">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand " href="/"><i style="color: #ff7b00;" class="fa-brands fa-free-code-camp"></i> V<span>D</span></a>
+                <a class="navbar-brand " href="/"><i style="color: #ff7b00;" class="fa-brands fa-free-code-camp"></i>
+                    V<span>D</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -141,7 +142,7 @@
                 <img draggable="false" class="tilt" src="assets/bitmojivarad.jpeg" alt=""
                     style="will-change: transform; transform: perspective(1000px) rotateX(1.06deg) rotateY(-5.82deg) scale3d(1, 1, 1);">
             </div>
-            
+
 
 
         </div>
@@ -174,7 +175,8 @@
                     <i style="color: greenyellow;" class="fa-solid fa-location-dot"></i> Address : Dombivli (w) <br>
                     <i style="color: blue;" class="fa-solid fa-phone"></i> Phone-No : 8407936701 <br>
                     <div class="resume">
-                        <a class="glow-on-hover" download="" href="./assets/resume/Resume_varad_dhumale.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+                        <a class="glow-on-hover" download="" href="./assets/resume/Resume_varad_dhumale.pdf"
+                            target="_blank" rel="noopener noreferrer">RESUME</a>
                     </div>
 
                 </div>
@@ -645,18 +647,18 @@
                     <img src="assets/education/contact.png" class="img-fluid" alt="...">
                 </div>
                 <div class="contactForm">
-                    <form onsubmit="sendEmail() ;reset() ; return false">
+                    <form onsubmit="sendEmail(); return false">
 
                         <div class="col-md-12">
                             <label for="validationCustom01" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="validationCustom01" required>
+                            <input type="text" class="form-control" id="fname" required>
                             <div class="valid-feedback">
                                 valid
                             </div>
                         </div>
                         <div class="col-md-12">
                             <label for="validationCustom02" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="validationCustom02" required>
+                            <input type="text" class="form-control" id="lname" required>
                             <div class="valid-feedback">
                                 valid
                             </div>
@@ -671,11 +673,11 @@
 
                         <!-- -- textarea -->
                         <div class="mb-3">
-                            <label for="validationTextarea" class="form-label">Enter Your Message</label>
-                            <textarea class="form-control" id="validationTextarea"
-                                placeholder="Required example textarea" required></textarea>
+                            <label for="validationTextarea" class="form-label">Enter Your Message/FeedBack</label>
+                            <textarea class="form-control" id="msg" placeholder="Required example textarea"
+                                required></textarea>
                             <div class="invalid-feedback">
-                                Enter Your Message
+                                Invalid
                             </div>
                         </div>
 
@@ -751,7 +753,7 @@
             </div>
         </section>
 
-<!-- 
+        <!-- 
         <div class="scrollTop">
     
         </div>
@@ -764,8 +766,8 @@
 
     <!-- scroll top btn -->
 
-    
-   
+
+
 
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".myimg"), {
@@ -789,8 +791,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
 
-    <script>
+
+    <script type="text/javaScript">
 
 
         const typed = new Typed('.multipletext', {
@@ -807,23 +811,47 @@
             duration: 1500,
             delay: 300
         })
-         ScrollReveal().reveal('.homewords , .contactImg ', { delay: 300, origin: 'bottom' });
-         ScrollReveal().reveal('.towardsAbout, .abtimg ', { delay: 300, origin: 'bottom' });
-         ScrollReveal().reveal('.socialIcons , ', { delay: 300, origin: 'bottom' });
-         ScrollReveal().reveal('.tilt , .aboutContent , .educard', { delay: 300, origin: 'bottom' });
-         ScrollReveal().reveal('.head , .letsChat', { delay: 100, origin: 'bottom' });
-         ScrollReveal().reveal('.contactForm', { delay: 300, origin: 'bottom' });
-         ScrollReveal().reveal(' .aabhar, .quickLinks', { delay: 300, origin: 'bottom' });
-         ScrollReveal().reveal(' .contactInfo,.EndOfWebsite ', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.homewords , .contactImg ', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.towardsAbout, .abtimg ', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.socialIcons , ', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.tilt , .aboutContent , .educard', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.head , .letsChat', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.contactForm', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal(' .aabhar, .quickLinks', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal(' .contactInfo,.EndOfWebsite ', { delay: 300, origin: 'bottom' });
 
 
 
 
+
+
+        // function sendEmail() {
+        //     alert("sorry || back-end is not ready || click on 'Lets Talk' ")
+        // }
 
         function sendEmail() {
-            alert("sorry || back-end is not ready || click on 'Lets Talk' ")
-        }
 
+            var email = document.getElementById('inputEmail4').value;
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            var email2 = email.toLowerCase();
+            var b = document.getElementById('msg').value;
+            var body = 'name : ' + fname +'-'+ lname+ '<br/> <br/> Email :' + email2 + '<br/><br/> message :' + b ; 
+
+            Email.send({ 
+                Host: "smtp.elasticemail.com",
+                Username: "varaddhumale177@gmail.com",
+                Password: "55C52BA9E52F3D3242AA5AA0EF382C676752",
+                To: 'varaddhumale177@gmail.com',
+                From: email2 ,
+                Subject: "New message from portfolio",
+                Body: body
+            }).then(
+                message => alert('Thanks For FeedBack/Message ||😊 SubMit Successfully')
+            );
+
+            
+        }
 
 
 
