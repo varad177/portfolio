@@ -665,7 +665,7 @@
                         </div>
                         <div class="col-md-12">
                             <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" required>
+                            <input type="email" class="form-control" id="inputEmail4">
                         </div>
 
 
@@ -682,7 +682,7 @@
                         </div>
 
                         <div class="col-6">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" type="submit">Send</button>
                         </div>
 
                     </form>
@@ -831,23 +831,24 @@
 
         function sendEmail() {
 
-            var email = document.getElementById('inputEmail4').value;
+             var email = document.getElementById('inputEmail4').value;
             var fname = document.getElementById('fname').value;
             var lname = document.getElementById('lname').value;
             var email2 = email.toLowerCase();
             var b = document.getElementById('msg').value;
-            var body = 'name : ' + fname +'-'+ lname+ '<br/> <br/> Email :' + email2 + '<br/><br/> message :' + b ; 
+            var body = 'name : ' + fname +'-'+ lname+'<br/><br/> email : ' +email2 +'<br/><br/> message :' + b  ; 
 
             Email.send({ 
                 Host: "smtp.elasticemail.com",
-                Username: "varaddhumale177@gmail.com",
-                Password: "55C52BA9E52F3D3242AA5AA0EF382C676752",
-                To: 'varaddhumale177@gmail.com',
-                From: email2 ,
+                Username: "fakeacc6862@gmail.com",
+                Password: "47E85993DC7394854F4E87B9F47289D636F1",
+                To: 'fakeacc6862@gmail.com',
+                From:'fakeacc6862@gmail.com' ,
                 Subject: "New message from portfolio",
                 Body: body
             }).then(
-                message => alert('Thanks For FeedBack/Message ||😊 SubMit Successfully')
+                message => alert(message)
+                // message => alert('Thanks For FeedBack/Message ||😊 SubMit Successfully')
             );
 
             
