@@ -1,7 +1,8 @@
 
 
 .projects{
-    height: 170vh;
+    min-height: 100vh;
+    height: auto;;
     width: 100%;
     background-color: #052a42;
     padding: 2rem;

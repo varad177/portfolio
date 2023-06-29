@@ -1,29 +1,7 @@
 /* home */
 
 
-@media(max-width:1000px) {
 
-
-    .about {
-        height: 112vh;
-    }
-
-    .skill {
-        height: 136vh;
-    }
-
-    .projects {
-        height: 228vh;
-    }
-
-    .education {
-        height: 119vh;
-    }
-
-    .footer {
-        height: 80vh;
-    }
-}
 
 @media(max-width:800px) {
 
@@ -32,11 +10,7 @@
         margin-top: 4rem;
     }
 
-    .about {
-        /* border: 3px solid greenyellow; */
-        height: 180vh;
-        /* margin-top: 18rem; */
-    }
+    
 
     .aboutElement {
         flex-direction: column;
@@ -49,7 +23,7 @@
 
     .aboutContent {
         width: 80%;
-        /* gap: 1rem; */
+       
     }
 
     .aboutimg {
@@ -60,26 +34,13 @@
 
     .aboutimg img {
         width: 100%;
-        /* height: 100%; */
+        
 
 
     }
 
-    .skill {
-        height: 150vh;
-    }
-
-    .education {
-        height: 146vh;
-    }
-
-    .projects {
-        height: 260vh;
-    }
-
-    .contact {
-        height: 126vh;
-    }
+   
+    
 
     #footerIcons a i {
         font-size: 18px;
@@ -92,30 +53,26 @@
 @media (max-width:600px) {
 
     #particles-js {
-        /* border: 3px solid red; */
-        height: 120vh;
+       
         width: 100%;
 
-        /* background-color: rgb(244, 244, 253); */
+        
 
     }
 
-    .home-section {
-        height: 111vh;
-    }
+    
 
     .homecontainer {
         margin-top: 2rem;
     }
 
     .homecontainer {
-        /* margin-top: 2rem; */
+        
         padding: 0.5rem;
         flex-direction: column;
     }
 
     .hometext {
-        /* margin-top: 5rem; */
         width: 90%;
     }
 
@@ -129,26 +86,11 @@
 
     }
 
-    .skill {
-        height: 230vh;
-    }
-
-    .education {
-        height: 246vh;
-    }
-
-    .projects {
-        height: 615vh;
-    }
-
-    .contact {
-        /* flex-direction: column; */
-        height: 174vh;
-    }
+   
 
     .contactContent {
         flex-direction: column;
-        /* justify-content: space-around; */
+        
         justify-content: center;
         align-items: center;
     }
@@ -187,9 +129,7 @@
         margin: 0.5rem;
     }
 
-    .footer {
-        height: 162vh;
-    }
+    
 
     .EndOfWebsite {
         margin: 1.5rem;
@@ -210,18 +150,13 @@
         font-size: 1.5rem;
     }
 
-    .about {
-        height: 162vh;
-    }
+   
 
     .aboutimg {
         width: 65%;
     }
 
-    .projects {
-        height: 538vh;
-    }
-
+    
     .contactImg {
         width: 89%;
     }
@@ -234,10 +169,6 @@
     .letsChat {
         width: 85%;
 
-    }
-
-    .contact {
-        height: 164vh;
     }
 
     .aabhar {
@@ -266,22 +197,14 @@
 
 
 @media (max-width:351px) {
-    .about {
-        height: 170vh;
-    }
+    
 
     .aboutimg {
         width: 68%;
 
     }
 
-    .projects {
-        height: 554vh;
-    }
-
-    .contact {
-        height: 170vh;
-    }
+    
 
     .aabhar {
         margin-top: 5rem;
@@ -296,17 +219,7 @@
     }
 }
 
-@media (max-width:740px) {
-    .education {
-        height: 242vh;
-    }
 
-    .projects {
-        /* max-width: 660vh; */
-        height: 660vh;
-    }
-
-}
 
 
 
@@ -328,51 +241,15 @@
 
 }
 
-@media (max-width:400px) {
-    .skill {
-        height: 231vh;
-    }
 
-}
 
 @media (max-width:435px) {
-    .education {
-        height: 244vh;
-    }
-
-    .projects {
-
-        height: 548vh;
-    }
-
+  
     .letsChat {
         width: 75%;
     }
 }
 
-@media (max-width:391px) {
-    .about {
-        height: 119vh;
-    }
-
-    .skill {
-        height: 165vh;
-    }
-
-    .education {
-        height: 177vh;
-    }
-
-    .projects {
-        height: 389vh;
-    }
-
-    .contact {
-        height: 116vh;
-    }
-
-
-}
 
 
 /* (max-width:400px) and (min-width:900px) */
@@ -400,98 +277,10 @@
 }
 
 
-@media (max-width:395px) {
-
-    .about {
-        height: 135vh;
-    }
-
-    .skill {
-        height: 166vh;
-    }
-
-    .education {
-        height: 181vh;
-    }
-
-    .projects {
-        height: 385vh;
-    }
-
-    .contact {
-        height: 120vh;
-    }
 
 
 
-}
-
-@media (max-width:381px) {
-    .about {
-        height: 163vh;
-    }
-
-    .skill {
-        height: 228vh;
-    }
-
-    .education {
-        height: 242vh;
-    }
-
-    .projects {
-        height: 534vh;
-    }
-
-    .contact {
-        height: 161vh;
-    }
-
-
-}
-
-
-@media (max-width:361px) {
-    .projects {
-        height: 540vh;
-    }
-
-}
-
-@media (max-width:351px) {
-    .about {
-        height: 170vh;
-    }
-
-    .projects {
-        height: 551vh;
-    }
-
-    .contact {
-        height: 167vh;
-    }
 
 
 
-}
 
-@media (max-width: 331px) {
-    .about {
-        height: 174vh;
-    }
-
-    .education {
-        height: 250vh;
-    }
-
-}
-
-@media (min-width: 1000px) and (max-width: 1100px)  {
-  .skill{
-    height: 134vh;
-  }   
-
-  .projects{
-    height: 213vh;
-  }
-}

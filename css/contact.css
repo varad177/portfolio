@@ -1,9 +1,10 @@
 .contact {
     width: 100%;
-display: flex;
-align-items: center;
-flex-direction: column;
-    height: 120vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
     background-color: #F4F6F7;
     padding: 2rem;
 }
@@ -37,23 +38,23 @@ flex-direction: column;
 .contactForm input {
     font-weight: bolder;
     color: black;
-    
+
     /* border: 2px solid black; */
 }
 
-.contactForm button{
+.contactForm button {
     background-color: #E74C3C;
     border: 2px solid #E74C3C;
 }
 
-.contactForm button:hover{
+.contactForm button:hover {
     background-color: #a73427;
     border: 2px solid #a73427;
 }
 
 
 /* lets chat */
-.letsChat{
+.letsChat {
     /* width: 10rem;
     height: 2rem; */
     display: flex;
@@ -66,7 +67,8 @@ flex-direction: column;
     width: 40%;
     background-color: rgb(128, 243, 128);
 }
-.letsChat a{
+
+.letsChat a {
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
@@ -74,23 +76,23 @@ flex-direction: column;
 
 }
 
-.letsChat a i{
-     font-size: 1.5rem;
+.letsChat a i {
+    font-size: 1.5rem;
     font-weight: bolder;
-   
+
 }
 
-.letsChat a:hover{
+.letsChat a:hover {
     color: white;
 }
 
-.letsChat:hover{
+.letsChat:hover {
     background-color: rgb(17, 138, 17);
 
 
 }
 
-.letsChat a i:hover{
+.letsChat a i:hover {
     color: white;
 
 }

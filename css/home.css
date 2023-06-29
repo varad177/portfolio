@@ -46,7 +46,8 @@
 }
 
 .home-section{
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     z-index: 10;
 
@@ -55,6 +56,8 @@
 .homecontainer {
     /* border-bottom: 2px solid rgb(255, 255, 255); */
     display: flex;
+    min-height: 100vh;
+    height: auto;
     justify-content: center;
     /* position: absolute; */
     align-items: center;
