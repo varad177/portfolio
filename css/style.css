@@ -296,3 +296,24 @@ nav .nav-link:hover {
     margin: 3rem;
     position: fixed;
 }
+
+
+.scrollup{
+    /* border: 2px solid red ; */
+    padding: .5em;
+    background-color: #2506ad;
+    position: fixed;
+    right: 0.8rem;
+    bottom: 2rem;
+    border-radius: 100%;
+
+}
+
+.scrollup:hover{
+    background-color: #10034a;
+}
+.scrollup i{
+    font-size: 2rem;
+    color: white;
+
+}
