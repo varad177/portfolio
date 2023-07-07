@@ -1,5 +1,8 @@
 
 
-    
-const v = document.getElementById().value
-         
+
+// const v = document.getElementById().value
+
+//making the greting function 
+
+
