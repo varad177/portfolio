@@ -45,7 +45,7 @@
     }
 }
 
-.home-section{
+.home-section {
     min-height: 100vh;
     height: auto;
     width: 100%;
@@ -65,7 +65,7 @@
     width: 100%;
     padding: 1.2rem;
     z-index: -1;
-    
+
 
 }
 
@@ -204,41 +204,100 @@
 
 #linked {
     color: rgb(17, 106, 215);
-
+    animation: lk 1s infinite;
+    animation-delay: 1s;
 
 }
 
 #linked:hover {
     color: rgb(45, 135, 245);
-
 }
 
-#wp {
-    color: rgb(26, 222, 26);
+@keyframes lk {
+    0% {
+        color: rgb(37, 117, 215);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(37, 117, 215);
+    }
+
+    50% {
+        color: rgb(25, 129, 255);
+        font-size: 2.12rem;
+        text-shadow: 1px 1px 1px rgb(25, 129, 255);
+    }
+
+    100% {
+        color: rgb(37, 117, 215);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(37, 117, 215);
+    }
 }
 
-#wp:hover {
-    color: rgb(13, 255, 13);
-}
-
-#fb {
-    color: rgb(35, 137, 220);
-}
-
-#fb:hover {
-    color: rgb(43, 160, 255);
-}
 
 #git {
     color: rgb(255, 255, 255);
+    animation: gt 1s infinite;
+    animation-delay: 2s;
 }
 
 #git:hover {
     color: rgb(255, 255, 255);
 }
 
+@keyframes gt {
+    0% {
+        color: rgb(255, 255, 255);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    }
+
+    50% {
+        color: rgb(255, 255, 255);
+        font-size: 2.12rem;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    }
+}
+
+#wp {
+    color: rgb(26, 194, 26);
+    animation: wpp 1s infinite;
+    animation-delay: 3s;
+}
+
+#wp:hover {
+    color: rgb(13, 255, 13);
+}
+
+@keyframes wpp {
+    0% {
+        color: rgb(29, 198, 29);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(29, 198, 29);
+    }
+
+    50% {
+        color: rgb(13, 255, 13);
+        font-size: 2.12rem;
+        text-shadow: 2px 2px 2px rgb(13, 255, 13);
+    }
+
+    100% {
+        color: rgb(29, 198, 29);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(29, 198, 29);
+    }
+}
+
 #insta {
     color: rgb(232, 23, 100);
+    animation: ist 1s infinite;
+    animation-delay: 4s;
 
 }
 
@@ -247,13 +306,92 @@
 
 }
 
-#gmail {
-    color: red;
+@keyframes ist {
+    0% {
+        color: rgb(255, 40, 119);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(255, 40, 119);
+    }
+
+    50% {
+        color: rgb(255, 40, 119);
+        font-size: 2.12rem;
+        text-shadow: 2px 2px 2px rgb(255, 40, 119);
+    }
+
+    100% {
+        color: rgb(255, 40, 119);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(255, 40, 119);
+    }
 }
 
+#fb {
+    color: rgb(35, 137, 220);
+    animation: fbb 1s infinite;
+    animation-delay:5s;
+}
+
+#fb:hover {
+    color: rgb(43, 160, 255);
+}
+
+@keyframes fbb {
+    0% {
+        color: rgb(43, 160, 255);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(43, 160, 255);
+    }
+
+    50% {
+        color: rgb(43, 160, 255);
+        font-size: 2.12rem;
+        text-shadow: 2px 2px 2px rgb(43, 160, 255);
+    }
+
+    100% {
+        color: rgb(43, 160, 255);
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px rgb(43, 160, 255);
+    }
+}
+
+
+
+
+
+
+
+#gmail {
+    color: red;
+    animation: gm 1s infinite;
+    animation-delay: 6s;
+}
+
+@keyframes gm {
+    0% {
+        color: red;
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px red;
+    }
+
+    50% {
+        color: red;
+        font-size: 2.12rem;
+        text-shadow: 2px 2px 2px red;
+    }
+
+    100% {
+        color: red;
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 1px red;
+    }
+}
 .socialIcons a i:hover {
     font-size: 2.1rem;
 }
+
+
 
 
 /* ------------------------------------ */
