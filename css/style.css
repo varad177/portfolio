@@ -317,3 +317,18 @@ nav .nav-link:hover {
     color: white;
 
 }
+
+
+.visitCount{
+    border: 1px solid #981d1d;
+    height: 37px;
+    width: 40px;
+    color: white;
+}
+
+.visit{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
