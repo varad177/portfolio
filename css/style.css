@@ -147,7 +147,7 @@ body {
 nav {
    
     border-bottom: .5px solid white;
-    background-color: black;
+    /* background-color: black; */
     box-shadow: 5px 5px;
     position: sticky;
 
