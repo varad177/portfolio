@@ -171,13 +171,31 @@ nav .nav-item {
 nav .nav-link {
     font-size: 1.1rem;
     color: var(--headcolor);
+   
+    position: relative;
     /* transition: all 0.2s ease-in; */
 
 }
 
+nav .nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all ease-out 0.4s;
+
+}
+nav .nav-link:hover::after{
+    width: 100%;
+}
+
 nav .nav-link:hover {
     color: white;
-    font-size: 1.13rem;
+
+   
 
 }
 

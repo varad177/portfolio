@@ -252,6 +252,7 @@
     color: rgb(255, 255, 255);
     animation: gt 1s infinite;
     animation-delay: 2s;
+    -webkit-text-stroke: 1px rgb(151, 151, 151) !important;
 }
 
 #git:hover {
