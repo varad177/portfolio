@@ -75,6 +75,7 @@
     align-items: center;
     /* border: 2px solid yellow; */
     width: 45%;
+    /* overflow: hidden; */
 }
 
 .homeimg img {
@@ -84,6 +85,13 @@
     border: 2px solid white;
     outline: none;
     box-shadow: 0 5px 10px 10px;
+
+    
+
+}
+
+.homeimg img:hover{
+    scale: 1.065;
 
 }
 
