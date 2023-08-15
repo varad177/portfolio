@@ -104,18 +104,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    /* color: white; */
+    -webkit-text-stroke: 1px #ffffff;
+
 
 
 }
 
 .hometext h2 {
     font-size: 2rem;
+    
 }
 
 .hometext span {
-    color: #FFD700;
+    /* color: #FFD700; */
     position: relative;
+    -webkit-text-stroke: 1px #ffe74b;
+    color: transparent;
+    
 
 }
 
