@@ -339,19 +339,7 @@ nav .nav-link:hover {
 }
 
 
-.visitCount{
-    border: 1px solid #981d1d;
-    height: 37px;
-    width: 40px;
-    color: white;
-}
 
-.visit{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
 
 
 

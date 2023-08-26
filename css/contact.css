@@ -64,11 +64,12 @@
     margin: 2rem;
     border: 2px solid green;
     border-radius: 20px;
-    width: 40%;
+    width: 80%;
     background-color: rgb(128, 243, 128);
 }
 
 .letsChat a {
+    text-align: center;
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
