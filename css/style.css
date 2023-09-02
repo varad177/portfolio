@@ -185,7 +185,9 @@ nav .nav-link::after{
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background: linear-gradient(to right, #fbff00 0%, #fb8107 100%);
+
     transition: all ease-out 0.4s;
 
 }
@@ -194,9 +196,11 @@ nav .nav-link:hover::after{
 }
 
 nav .nav-link:hover {
-    color: white;
-
-   
+    /* color: white; */
+    	
+    background: linear-gradient(to right, #fbff00 0%, #fb8107 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;   
 
 }
 
@@ -366,4 +370,109 @@ body::-webkit-scrollbar-thumb
 									   color-stop(0.44, rgb(122,153,217)),
 									   color-stop(0.72, rgb(73,125,189)),
 									   color-stop(0.86, rgb(28,58,148)));
+}
+
+
+
+
+/* home page image */
+
+
+
+.box-panel{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.widget-container{
+  
+	transition: all 0.3s ease;
+	.common-flip-style{
+		width: 400px;
+		height: 400px;
+		cursor: pointer;
+		.common-box-style{
+			transform-style: preserve-3d;
+			backface-visibility: hidden;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-webkit-transition: all .6s ease-in-out;
+			-o-transition: all .6s ease-in-out;
+			transition: all .6s ease-in-out;
+			border-radius: 10px;
+		}
+	}
+}
+
+.flip-box{
+	position: relative;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	.box-front{
+		transform: none;
+		z-index: 1;
+		background-image: url('https://varad177.github.io/portfolio/assets/bitmojivarad.jpeg');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.box-back{
+		width: calc(100% - 10px);
+		height: calc(100% - 10px);
+		transform: rotateX(0) rotateY(-180deg);
+		background: #000000;
+	}
+	&:hover{
+		.box-front{
+			transform: rotateX(0) rotateY(180deg);
+		}
+		.box-back{
+			transform: none;
+		}
+	}
+}
+
+.box-content-wrapper{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	text-align: center;
+	transform: translateZ(90px);
+    background: transparent;
+}
+
+.box-content{
+    color: white;
+}
+
+@media(max-width:900px){
+    
+.widget-container{
+  
+	transition: all 0.3s ease;
+	.common-flip-style{
+		width: 250px;
+		height: 250px;
+		cursor: pointer;
+		.common-box-style{
+			transform-style: preserve-3d;
+			backface-visibility: hidden;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-webkit-transition: all .6s ease-in-out;
+			-o-transition: all .6s ease-in-out;
+			transition: all .6s ease-in-out;
+			border-radius: 10px;
+		}
+	}
+}
 }
