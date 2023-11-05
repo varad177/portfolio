@@ -11,6 +11,11 @@ body {
 
 }
 
+html::selection, body::selection {
+    background-color: yellow; /* Color when text is selected */
+    color: red; /* Color of selected text */
+}
+
 * {
     margin: 0;
     padding: 0;
