@@ -191,7 +191,7 @@
 
 @media (max-width:1100px) {
     .projectsBTN {
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
     }
