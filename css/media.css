@@ -1,292 +1,242 @@
 /* home */
 
+@media (max-width: 800px) {
+  .aboutHeading {
+    margin-top: 4rem;
+  }
 
+  .aboutElement {
+    flex-direction: column;
+    margin: 0;
+  }
 
+  .aboutHeading {
+    margin-top: 1rem;
+  }
 
-@media(max-width:800px) {
+  .aboutContent {
+    width: 80%;
+  }
 
+  .aboutimg {
+    width: 48%;
+    height: 90%;
+    margin-top: 2rem;
+  }
 
-    .aboutHeading {
-        margin-top: 4rem;
-    }
-
-    
-
-    .aboutElement {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .aboutHeading {
-        margin-top: 1rem;
-    }
-
-    .aboutContent {
-        width: 80%;
-       
-    }
-
-    .aboutimg {
-
-        width: 48%;
-        height: 90%;
-    }
-
-    .aboutimg img {
-        width: 100%;
-        
-
-
-    }
-
-   
-    
-
-    #footerIcons a i {
-        font-size: 18px !important;
-
-    }
-
-
-
-}
-
-
-@media (max-width:600px) {
-
-    #particles-js {
-       
-        width: 100%;
-
-        
-
-    }
-
-    
-
-    .homecontainer {
-        margin-top: 2rem;
-    }
-
-    .homecontainer {
-        
-        padding: 0.5rem;
-        flex-direction: column;
-    }
-
-    .hometext {
-        width: 90%;
-    }
+  .aboutimg img {
+    width: 100%;
+  }
 
   
-    .homeimg img {
-        width: 100%;
-        height: 100%;
-        border-radius: 40%;
-        border: 2px solid white;
-        outline: none;
-        box-shadow: 0 5px 10px 10px;
-
-    }
-
-   
-
-    .contactContent {
-        flex-direction: column;
-        
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contactImg {
-        width: 70%;
-    }
-
-    .contactForm {
-        width: 70%;
-        margin: 1rem;
-    }
-
-    .footerContent {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .aabhar {
-        width: 90%;
-        border-radius: 12px;
-        margin: 0.5rem;
-    }
-
-    .quickLinks {
-        width: 90%;
-        border-radius: 12px;
-        margin: 0.5rem;
-    }
-
-    .contactInfo {
-        width: 90%;
-        border-radius: 12px;
-        margin: 0.5rem;
-    }
-
-    
-
-    .EndOfWebsite {
-        margin: 1.5rem;
-        height: 8%;
-
-    }
-
 }
 
+@media (max-width: 800px) {
+  nav .navbar-brand {
+    margin: 0;
+  }
 
+  .clock {
+    font-size: 16px;
+  }
 
-@media (max-width:400px) {
-    .homecontainer {
-        margin-top: -2rem;
-    }
+  #particles-js {
+    width: 100%;
+  }
 
-    .hometext h2 {
-        font-size: 1.5rem;
-    }
+  .homecontainer {
+    margin-top: 2rem;
+  }
 
-   
+  .homecontainer {
+    padding: 0.5rem;
+    flex-direction: column;
 
-    .aboutimg {
-        width: 65%;
-    }
+  }
 
-    
-    .contactImg {
-        width: 89%;
-    }
+  .hometext {
+    width: 90%;
+  }
 
-    .contactForm {
-        width: 90%;
-        margin: 1rem;
-    }
+  .homeimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+    border: 2px solid white;
+    outline: none;
+    box-shadow: 0 5px 10px 10px;
+  }
 
-    .letsChat {
-        width: 85%;
+  .contactContent {
+    flex-direction: column;
 
-    }
+    justify-content: center;
+    align-items: center;
+  }
 
-    .aabhar {
-        margin-top: 2rem;
-    }
+  .contactImg {
+    width: 95%;
+  }
 
-    .EndOfWebsite {
-        margin-top: 3.5rem;
-    }
+  .contactForm {
+    width:95%;
+    margin: 1rem;
+  }
 
-    .EndOfWebsite h5 {
-        font-size: 1rem;
-    }
+  .footerContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aabhar {
+    width: 90%;
+    border-radius: 12px;
+    margin: 0.5rem;
+  }
+
+  .quickLinks {
+    width: 90%;
+    border-radius: 12px;
+    margin: 0.5rem;
+  }
+
+  .contactInfo {
+    width: 90%;
+    border-radius: 12px;
+    margin: 0.5rem;
+  }
+
+  .EndOfWebsite {
+    margin: 1.5rem;
+    height: 8%;
+  }
+}
+
+@media (max-width: 400px) {
+  .homecontainer {
+    margin-top: -2rem;
+  }
+
+  .hometext h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutimg {
+    width: 65%;
+  }
+
+  .contactImg {
+    width: 89%;
+  }
+
+  .contactForm {
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .letsChat {
+    width: 85%;
+  }
+
+  .aabhar {
+    margin-top: 2rem;
+  }
+
+  .EndOfWebsite {
+    margin-top: 3.5rem;
+  }
+
+  .EndOfWebsite h5 {
+    font-size: 1rem;
+  }
 }
 
 /* projects */
 
-@media (max-width:1100px) {
-    .projectsBTN {
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 1100px) {
+  .projectsBTN {
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+  #footerIcons a i {
+    font-size: 18px !important;
+  }
 }
 
+@media (max-width: 351px) {
+  .aboutimg {
+    width: 68%;
+  }
 
+  .aabhar {
+    margin-top: 5rem;
+  }
 
-@media (max-width:351px) {
-    
+  .EndOfWebsite {
+    margin-top: 5.5rem;
+  }
 
-    .aboutimg {
-        width: 68%;
-
-    }
-
-    
-
-    .aabhar {
-        margin-top: 5rem;
-    }
-
-    .EndOfWebsite {
-        margin-top: 5.5rem;
-    }
-
-    .EndOfWebsite h5 {
-        font-size: 0.8rem;
-    }
+  .EndOfWebsite h5 {
+    font-size: 0.8rem;
+  }
 }
-
-
-
-
-
-
-
 
 /* skill */
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
+  .fourSkillsBox {
+    flex-direction: column;
+  }
 
-
-    .fourSkillsBox {
-        flex-direction: column;
-    }
-
-    .twoSkillsBox {
-        width: 100%;
-    }
-
+  .twoSkillsBox {
+    width: 100%;
+  }
 }
 
-
-
-@media (max-width:435px) {
-  
-    .letsChat {
-        width: 80%;
-    }
-    .letsChat a{
-        font-size: 16px;
-    }
+@media (max-width: 435px) {
+  .letsChat {
+    width: 80%;
+  }
+  .letsChat a {
+    font-size: 16px;
+  }
 }
-
-
 
 /* (max-width:400px) and (min-width:900px) */
 
-
-
-
-
-
 /* others */
 
-@media (max-width:995px) {
-    nav .nav-item {
-        padding: .5rem .5rem;
-    }
+@media (max-width: 995px) {
+  nav .nav-item {
+    padding: 0.5rem 0.5rem;
+  }
 
-    nav .nav-link {
-        font-size: 1.1rem;
-        border-bottom: 2px solid white;
-        color: var(--headcolor);
-        /* transition: all 0.2s ease-in; */
-
-    }
-
+  nav .nav-link {
+    font-size: 1.1rem;
+    border-bottom: 2px solid white;
+    color: var(--headcolor);
+    /* transition: all 0.2s ease-in; */
+  }
 }
 
 
 
 
+/* project */
 
+@media  (max-width : 1080px){
 
+    .projectWrapper{
+        width: 48% !important;
+    }
+    
+}
+@media  (max-width : 700px){
 
-
-
+    .projectWrapper{
+        width: 98% !important;
+    }
+    
+}

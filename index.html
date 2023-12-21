@@ -58,6 +58,7 @@
             ><i style="color: #ff7b00" class="fa-brands fa-free-code-camp"></i>
             V<span>D</span></a
           >
+          <div id="MyClockDisplay" class="clock " onload="showTime()"></div>
           <button
             class="navbar-toggler"
             for="hamclose"
@@ -97,6 +98,9 @@
               </div>
             </span>
           </button>
+
+         
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -466,7 +470,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- -- -->
-          <div class="col">
+          <div class="col projectWrapper">
             <div class="card h-100">
               <img
                 src="assets/projects/lms.png"
@@ -539,7 +543,7 @@
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                 >
                   <a
-                  target="_blank"
+                    target="_blank"
                     class="ProjectVideo"
                     href="https://www.linkedin.com/posts/varad-dhumale-0abb68255_learningmanagementsystem-reactjs-nodejs-activity-7128738738939043840--BwE?utm_source=share&utm_medium=member_desktop"
                     >Video</a
@@ -552,7 +556,7 @@
           <!-- -- -->
 
           <!-- -- -->
-          <div class="col">
+          <div class="col projectWrapper">
             <div class="card h-100">
               <img
                 src="assets/projects/netflix.png"
@@ -626,7 +630,7 @@
           <!-- -- -->
 
           <!-- ------- my chatbot-->
-          <div class="col projectsCard">
+          <div class="col projectsCard projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -704,7 +708,7 @@
           <!-- --------- -->
 
           <!-- -- -->
-          <div class="col projectsCard">
+          <div class="col projectsCard projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -778,7 +782,7 @@
           </div>
           <!-- -- -->
           <!-- -- -->
-          <div class="col projectsCard">
+          <div class="col projectsCard projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -855,7 +859,7 @@
             </div>
           </div>
           <!-- -- -->
-          <div class="col projectsCard">
+          <div class="col projectsCard projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -944,7 +948,7 @@
 
           <!-- google docs clone -->
 
-          <div class="col projectsCard">
+          <div class="col projectsCard projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -1026,7 +1030,7 @@
           <!--  -->
 
           <!-- ------------------- python movie -->
-          <div class="col">
+          <div class="col projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -1104,7 +1108,7 @@
           </div>
 
           <!-- ------- bootStrap practice -->
-          <div class="col">
+          <div class="col projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -1163,7 +1167,7 @@
           </div>
 
           <!-- ----------- movie UI -->
-          <div class="col">
+          <div class="col projectWrapper">
             <div class="card h-100">
               <img
                 src="assets/projects/moviesUI.png"
@@ -1235,7 +1239,7 @@
           </div>
 
           <!-- ------- the old porrtfolio web site  -->
-          <div class="col">
+          <div class="col projectWrapper">
             <div class="card h-100">
               <img
                 src="assets/projects/oldPortFolio.png"
@@ -1303,7 +1307,7 @@
           </div>
 
           <!-- ---calculator -->
-          <div class="col">
+          <div class="col projectWrapper">
             <div class="card h-100">
               <img
                 style="border-bottom: 2px solid black"
@@ -1585,90 +1589,121 @@
 
 
 
-                    const typed = new Typed('.multipletext', {
-                        strings: ['MERN Stack Developer', 'Coder', 'Web Designer'],
-                        typeSpeed: 60,
-                        backSpeed: 30,
-                        backDelay: 800,
-                        loop: true
-                    });
+                          const typed = new Typed('.multipletext', {
+                              strings: ['MERN Stack Developer', 'Coder', 'Web Designer'],
+                              typeSpeed: 60,
+                              backSpeed: 30,
+                              backDelay: 800,
+                              loop: true
+                          });
 
-                          ScrollReveal({
-                              reset: true,
-                              distance: '50px',
-                              duration: 1500,
-                              delay: 300
-                          })
-                          //  ScrollReveal().reveal('.homewords , .contactImg ', { delay: 300, origin: 'bottom' });
-                          //  ScrollReveal().reveal('.towardsAbout, .abtimg ,.aabhar, .quickLinks ', { delay: 300, origin: 'bottom' });
-                          //  ScrollReveal().reveal('.socialIcons , .contactInfo,.EndOfWebsite ', { delay: 300, origin: 'bottom' });
-                          //  ScrollReveal().reveal('.tilt , .aboutContent , .educard', { delay: 300, origin: 'bottom' });
-                          //  ScrollReveal().reveal('.head , .letsChat', { delay: 100, origin: 'bottom' });
-                           ScrollReveal().reveal('.homewords  ', { delay: 300, origin: 'bottom' });
-                           ScrollReveal().reveal('.socialIcons , .tilt', { delay: 300, origin: 'bottom' });
-
-
+                                ScrollReveal({
+                                    reset: true,
+                                    distance: '50px',
+                                    duration: 1500,
+                                    delay: 300
+                                })
+                                //  ScrollReveal().reveal('.homewords , .contactImg ', { delay: 300, origin: 'bottom' });
+                                //  ScrollReveal().reveal('.towardsAbout, .abtimg ,.aabhar, .quickLinks ', { delay: 300, origin: 'bottom' });
+                                //  ScrollReveal().reveal('.socialIcons , .contactInfo,.EndOfWebsite ', { delay: 300, origin: 'bottom' });
+                                //  ScrollReveal().reveal('.tilt , .aboutContent , .educard', { delay: 300, origin: 'bottom' });
+                                //  ScrollReveal().reveal('.head , .letsChat', { delay: 100, origin: 'bottom' });
+                                 ScrollReveal().reveal('.homewords  ', { delay: 300, origin: 'bottom' });
+                                 ScrollReveal().reveal('.socialIcons , .tilt', { delay: 300, origin: 'bottom' });
 
 
 
 
 
-                          // function sendEmail() {
-                          //     alert("sorry || back-end is not ready || click on 'Lets Talk' ")
-                          // }
-
-                          function sendEmail() {
-
-                               var email = document.getElementById('inputEmail4').value;
-                              var fname = document.getElementById('fname').value;
-                              var lname = document.getElementById('lname').value;
-                              var email2 = email.toLowerCase();
-                              var b = document.getElementById('msg').value;
-                              var body = 'name : ' + fname +'-'+ lname+'<br/><br/> email : ' +email2 +'<br/><br/> message :' + b  ;
-
-                              Email.send({
-                                  Host: "smtp.elasticemail.com",
-                                  Username: "fakeacc6862@gmail.com",
-                                  Password: "47E85993DC7394854F4E87B9F47289D636F1",
-                                  // To: 'fakeacc6862@gmail.com',
-                                   To: 'varaddhumale177@gmail.com',
-                                  From:'fakeacc6862@gmail.com' ,
-                                  Subject: "New message from portfolio",
-                                  Body: body
-                              }).then(
-                                  // message => alert(message)
-                                   message => alert('Thanks For FeedBack/Message ||😊 SubMit Successfully')
-                              );
 
 
-                          }
+                                // function sendEmail() {
+                                //     alert("sorry || back-end is not ready || click on 'Lets Talk' ")
+                                // }
 
-                        //   the greeting function
-                          let date = new Date()
-                  var hrs = date.getHours();
+                                function sendEmail() {
+
+                                     var email = document.getElementById('inputEmail4').value;
+                                    var fname = document.getElementById('fname').value;
+                                    var lname = document.getElementById('lname').value;
+                                    var email2 = email.toLowerCase();
+                                    var b = document.getElementById('msg').value;
+                                    var body = 'name : ' + fname +'-'+ lname+'<br/><br/> email : ' +email2 +'<br/><br/> message :' + b  ;
+
+                                    Email.send({
+                                        Host: "smtp.elasticemail.com",
+                                        Username: "fakeacc6862@gmail.com",
+                                        Password: "47E85993DC7394854F4E87B9F47289D636F1",
+                                        // To: 'fakeacc6862@gmail.com',
+                                         To: 'varaddhumale177@gmail.com',
+                                        From:'fakeacc6862@gmail.com' ,
+                                        Subject: "New message from portfolio",
+                                        Body: body
+                                    }).then(
+                                        // message => alert(message)
+                                         message => alert('Thanks For FeedBack/Message ||😊 SubMit Successfully')
+                                    );
 
 
-                  var msg;
-                  if (hrs < 12) {
-                      msg = "Good Morning"
-                  } else if (hrs >= 12 && hrs <= 17) {
-                      msg = "Good Afternoon"
-                  } else if (hrs >= 17 && hrs <= 24) {
-                      msg = "Good Evening"
-                  }
+                                }
 
-                  document.getElementById('greet').innerHTML = msg;
-
-                    const backToTopContainer = document.getElementById("back-to-top-container");
+                              //   the greeting function
+                                let date = new Date()
+                        var hrs = date.getHours();
 
 
-      window.addEventListener("scroll", () => {
-          if (document.documentElement.scrollTop > 100) {
-              backToTopContainer.style.display = "block";
-          } else {
-              backToTopContainer.style.display = "none";
+                        var msg;
+                        if (hrs < 12) {
+                            msg = "Good Morning"
+                        } else if (hrs >= 12 && hrs <= 17) {
+                            msg = "Good Afternoon"
+                        } else if (hrs >= 17 && hrs <= 24) {
+                            msg = "Good Evening"
+                        }
+
+                        document.getElementById('greet').innerHTML = msg;
+
+                          const backToTopContainer = document.getElementById("back-to-top-container");
+
+
+            window.addEventListener("scroll", () => {
+                if (document.documentElement.scrollTop > 100) {
+                    backToTopContainer.style.display = "block";
+                } else {
+                    backToTopContainer.style.display = "none";
+                }
+            });
+
+
+            function showTime(){
+          var date = new Date();
+          var h = date.getHours(); // 0 - 23
+          var m = date.getMinutes(); // 0 - 59
+          var s = date.getSeconds(); // 0 - 59
+          var session = "AM";
+
+          if(h == 0){
+              h = 12;
           }
-      });
+
+          if(h > 12){
+              h = h - 12;
+              session = "PM";
+          }
+
+          h = (h < 10) ? "0" + h : h;
+          m = (m < 10) ? "0" + m : m;
+          s = (s < 10) ? "0" + s : s;
+
+          var time = h + ":" + m + ":" + s + " " + session;
+          document.getElementById("MyClockDisplay").innerText = time;
+          document.getElementById("MyClockDisplay").textContent = time;
+
+          setTimeout(showTime, 1000);
+
+      }
+
+      showTime();
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
