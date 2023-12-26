@@ -12,8 +12,11 @@ body {
 /* Add this CSS to your stylesheet or in a style tag in your HTML */
 html {
   scroll-behavior: smooth;
-  transition: transform 2s ease !important;
 
+}
+
+*{
+  transition: transform 0.7s ease !important;
 }
 
 
