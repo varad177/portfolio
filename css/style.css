@@ -6,17 +6,16 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "Lato", sans-serif;
   position: relative;
-  transition: transform 2s ease !important;
 }
 
 /* Add this CSS to your stylesheet or in a style tag in your HTML */
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 
 }
 
 *{
-  transition: transform 0.7s ease !important;
+  scroll-behavior: smooth;
 }
 
 
@@ -375,6 +374,8 @@ body::-webkit-scrollbar-thumb {
 
 .ScrollAnimation{
   transform: translateX(-300%);
+  transition: transform 0.7s ease !important;
+
 }
 
 .ScrollAnimation.show{
