@@ -6,7 +6,16 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "Lato", sans-serif;
   position: relative;
+  transition: transform 2s ease !important;
 }
+
+/* Add this CSS to your stylesheet or in a style tag in your HTML */
+html {
+  scroll-behavior: smooth;
+  transition: transform 2s ease !important;
+
+}
+
 
 .clock {
     color: #17d4fe;
@@ -293,6 +302,7 @@ nav .nav-link:hover {
 
 .EndOfWebsite {
   margin: 1rem;
+ 
   /* border: 2px solid pink; */
   background-color: #010e26;
   border-radius: 12px;
@@ -357,4 +367,14 @@ body::-webkit-scrollbar-thumb {
   );
 }
 
-/* home page image */
+
+/* animation  */
+
+.ScrollAnimation{
+  transform: translateX(-300%);
+}
+
+.ScrollAnimation.show{
+  transform: translateX(0);
+}
+

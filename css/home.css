@@ -76,10 +76,12 @@
     /* border: 2px solid yellow; */
     width: 45%;
     /* overflow: hidden; */
+    transition: transform 2s ease !important;
 }
 
 .homeimg img {
     width: 70%;
+    transition: transform 2s ease !important;
     height: 30%;
     border-radius: 40%;
     border: 2px solid white;
