@@ -58,9 +58,10 @@
             ><i style="color: #ff7b00" class="fa-brands fa-free-code-camp"></i>
             V<span>D</span></a
           >
-          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+          <!-- <div id="MyClockDisplay" class="clock" onload="showTime()"></div> -->
           <button
             class="navbar-toggler"
+            id="hamBTN"
             for="hamclose"
             type="button"
             data-bs-toggle="collapse"
@@ -104,25 +105,25 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
-              <li class="nav-item">
+              <li onclick="{hideNav()}" class="nav-item">
                 <a class="nav-link" for="hamclose" href="#about">About</a>
               </li>
-              <li class="nav-item">
+              <li onclick="{hideNav()}" class="nav-item">
                 <a class="nav-link" for="hamclose" href="#skill">Skills</a>
               </li>
-              <li class="nav-item">
+              <li onclick="{hideNav()}" class="nav-item">
                 <a class="nav-link" href="#education">Education</a>
               </li>
-              <li class="nav-item">
+              <li onclick="{hideNav()}" class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
-              <li class="nav-item">
+              <li onclick="{hideNav()}" class="nav-item">
                 <a class="nav-link" href="#codework">Code Work</a>
               </li>
-              <li class="nav-item">
+              <li onclick="{hideNav()}" class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
-              <li class="nav-item chatbotLink">
+              <li onclick="{hideNav()}" class="nav-item chatbotLink">
                 <a
                   class="nav-link chatbotLink"
                   target="_blank"
@@ -136,7 +137,7 @@
       </nav>
 
       <div class="homecontainer">
-        <div class="hometext ">
+        <div class="hometext">
           <h2 class="homewords">
             <span id="greet"></span> <span class="wave">👋</span> IT'S ME
           </h2>
@@ -194,7 +195,7 @@
                 scale3d(1, 1, 1);
             " />
       </div> -->
-        <div class="homeimg ">
+        <div class="homeimg">
           <section class="box-panel">
             <div class="widget-container">
               <div class="flip-box common-flip-style">
@@ -275,7 +276,7 @@
             <span style="color: #ffd700">Abilities</span>
           </h2>
         </div>
-        <div class="skillBoxes ">
+        <div class="skillBoxes">
           <div class="fourSkillsBox">
             <div class="twoSkillsBox">
               <div class="singleSkillBox ScrollAnimation scroll">
@@ -1402,7 +1403,7 @@
           <div class="contactForm ScrollAnimation">
             <form onsubmit="sendEmail(); return false">
               <div class="col-md-12 ScrollAnimation">
-                <label for="validationCustom01" class="form-label "
+                <label for="validationCustom01" class="form-label"
                   >First name</label
                 >
                 <input type="text" class="form-control" id="fname" required />
@@ -1435,7 +1436,10 @@
               </div>
 
               <div class="contactBTNDiv">
-                <button class="btn contactBTN btn-primary ScrollAnimation" type="submit">
+                <button
+                  class="btn contactBTN btn-primary ScrollAnimation"
+                  type="submit"
+                >
                   Send
                 </button>
               </div>
@@ -1465,7 +1469,7 @@
               <span>&#128591;</span>
             </p>
           </div>
-          <div class="quickLinks">
+          <div class="quickLinks ScrollAnimation">
             <h3>QUICK LINKS</h3>
             <br />
             <a class="ScrollAnimation" href="#home">
@@ -1673,35 +1677,35 @@
                   });
 
 
-                  function showTime(){
-                var date = new Date();
-                var h = date.getHours(); // 0 - 23
-                var m = date.getMinutes(); // 0 - 59
-                var s = date.getSeconds(); // 0 - 59
-                var session = "AM";
+            //       function showTime(){
+            //     var date = new Date();
+            //     var h = date.getHours(); // 0 - 23
+            //     var m = date.getMinutes(); // 0 - 59
+            //     var s = date.getSeconds(); // 0 - 59
+            //     var session = "AM";
 
-                if(h == 0){
-                    h = 12;
-                }
+            //     if(h == 0){
+            //         h = 12;
+            //     }
 
-                if(h > 12){
-                    h = h - 12;
-                    session = "PM";
-                }
+            //     if(h > 12){
+            //         h = h - 12;
+            //         session = "PM";
+            //     }
 
-                h = (h < 10) ? "0" + h : h;
-                m = (m < 10) ? "0" + m : m;
-                s = (s < 10) ? "0" + s : s;
+            //     h = (h < 10) ? "0" + h : h;
+            //     m = (m < 10) ? "0" + m : m;
+            //     s = (s < 10) ? "0" + s : s;
 
-                var time = h + ":" + m + ":" + s + " " + session;
-                document.getElementById("MyClockDisplay").innerText = time;
-                document.getElementById("MyClockDisplay").textContent = time;
+            //     var time = h + ":" + m + ":" + s + " " + session;
+            //     document.getElementById("MyClockDisplay").innerText = time;
+            //     document.getElementById("MyClockDisplay").textContent = time;
 
-                setTimeout(showTime, 1000);
+            //     setTimeout(showTime, 1000);
 
-            }
+            // }
 
-            showTime();
+            // showTime();
 
 
             //animation
@@ -1723,6 +1727,19 @@
                   box.classList.remove('show')
               }
           })
+      }
+
+
+
+      // navbar  hide
+
+      const nav = document.getElementById('navbarSupportedContent')
+      const hanbtn = document.getElementById('hamBTN')
+
+      function hideNav(){
+
+        nav.classList.remove('show')
+
       }
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
