@@ -136,7 +136,7 @@ body::selection {
 }
 
 /* HAMBURGER 1 */
-.checkbox1:checked + label > .hamburger1 > .bar1 {
+/* .checkbox1:checked + label > .hamburger1 > .bar1 {
   transform: rotate(45deg);
   transform-origin: 5%;
   width: 41px;
@@ -156,7 +156,7 @@ body::selection {
   transform-origin: 5%;
   transform: rotate(-45deg);
   width: 41px;
-}
+} */
 
 /*  */
 
