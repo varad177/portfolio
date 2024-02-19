@@ -158,6 +158,7 @@
   .projectsBTN {
     /* flex-direction: column; */
     justify-content: center;
+    gap: 20px;
     align-items: center;
   }
   #footerIcons a i {
