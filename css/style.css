@@ -135,30 +135,7 @@ body::selection {
   bottom: 0;
 }
 
-/* HAMBURGER 1 */
-/* .checkbox1:checked + label > .hamburger1 > .bar1 {
-  transform: rotate(45deg);
-  transform-origin: 5%;
-  width: 41px;
-}
 
-.checkbox1:checked + label > .hamburger1 > .bar2 {
-  transform: translateX(-40px);
-  background-color: transparent;
-}
-
-.checkbox1:checked + label > .hamburger1 > .bar3 {
-  transform: translateX(40px);
-  background-color: transparent;
-}
-
-.checkbox1:checked + label > .hamburger1 > .bar4 {
-  transform-origin: 5%;
-  transform: rotate(-45deg);
-  width: 41px;
-} */
-
-/*  */
 
 nav {
   border-bottom: 0.5px solid white;
@@ -319,32 +296,6 @@ nav .nav-link:hover {
 
 /* //scroll up */
 
-.scrollTop {
-  width: 20px;
-  height: 20px;
-  border: 2px solid red;
-  right: 2rem;
-  margin: 3rem;
-  position: fixed;
-}
-
-.scrollup {
-  /* border: 2px solid red ; */
-  padding: 0.5em;
-  background-color: #2506ad;
-  position: fixed;
-  right: 0.8rem;
-  bottom: 2rem;
-  border-radius: 100%;
-}
-
-.scrollup:hover {
-  background-color: #10034a;
-}
-.scrollup i {
-  font-size: 2rem;
-  color: white;
-}
 
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -370,15 +321,65 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* animation  */
-
-.ScrollAnimation{
-  transform: translateX(-300%);
-  transition: transform 0.7s ease !important;
-
+#back-to-top-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid transparent; /* Initial transparent border */
+  border-radius: 50%; /* Rounded shape */
+ 
+  cursor: pointer;
+  transition: border-width 0.3s ease; /* Smooth transition for border */
+  z-index: 9999;
 }
 
-.ScrollAnimation.show{
-  transform: translateX(0);
+#back-to-top-button {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
 }
 
+#progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #ccc;
+  z-index: 9999;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: #2506AD;
+  width: 0;
+}
+
+
+.scrollTop {
+  
+  border: 2px solid red;
+  right: 2rem;
+  margin: 3rem;
+  position: fixed;
+}
+
+.scrollup {
+  /* border: 2px solid red ; */
+  
+  background-color: #2506ad;
+  position: fixed;
+  right: 0.8rem;
+  bottom: 2rem;
+  border-radius: 100%;
+}
+
+.scrollup:hover {
+  background-color: #10034a;
+}
+.scrollup i {
+  font-size: 1.5rem;
+  color: white;
+}
