@@ -1,114 +1,111 @@
 .contact {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    height: auto;
-    background-color: #F4F6F7;
-    padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  background-color: #f4f6f7;
+  padding: 2rem;
+}
+
+#contactheading {
+  overflow-x: hidden;
 }
 
 .contactContent {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow-x: hidden;
+
+  /* border: 2px solid yellow; */
 }
 
 .contactImg {
-    width: 45%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* border: 2px solid red; */
+  width: 45%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* border: 2px solid red; */
 }
 
 .contactImg img {
-    border-radius: 12px;
-    border: 2px solid black;
-    box-shadow: 3px 3px 4px black;
-    height: 100%;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 4px black;
+  height: 100%;
 }
 
 .contactForm {
-    width: 45%;
-    padding: 1rem;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 45%;
+  padding: 1rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contactForm input {
-    font-weight: bolder;
-    color: black;
+  font-weight: bolder;
+  color: black;
 
-    /* border: 2px solid black; */
+  /* border: 2px solid black; */
 }
 
 .contactForm button {
-    background-color: #E74C3C;
-    border: 2px solid #E74C3C;
+  background-color: #e74c3c;
+  border: 2px solid #e74c3c;
 }
 
 .contactForm button:hover {
-    background-color: #a73427;
-    border: 2px solid #a73427;
+  background-color: #a73427;
+  border: 2px solid #a73427;
 }
-
 
 /* lets chat */
 .letsChat {
-    /* width: 10rem;
+  /* width: 10rem;
     height: 2rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    margin: 1rem;
-    border: 2px solid green;
-    border-radius: 20px;
-    width: 80%;
-    background-color: rgb(128, 243, 128);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid green;
+  border-radius: 20px;
+  width: 80%;
+  background-color: rgb(128, 243, 128);
 }
 
 .letsChat a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    font-weight: bolder;
-
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bolder;
 }
 
-
-
 .letsChat a i {
-    font-size: 1.5rem;
-    font-weight: bolder;
-
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 .letsChat a:hover {
-    color: white;
+  color: white;
 }
 
 .letsChat:hover {
-    background-color: rgb(17, 138, 17);
-
-
+  background-color: rgb(17, 138, 17);
 }
 
 .letsChat a i:hover {
-    color: white;
-
+  color: white;
 }
 
-.contactBTNDiv{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contactBTNDiv {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.contactBTN{
-    width: 80%;
-    
+.contactBTN {
+  width: 80%;
 }

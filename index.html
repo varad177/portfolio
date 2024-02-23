@@ -52,9 +52,14 @@
 
     <!-- home sec starrt -->
     <div id="home" class="home-section">
+      <div id="back-to-top-container" title="Move To Top" class="scrollup">
+        <div id="back-to-top-button">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/"
+          <a class="navbar-brand" id="logo" href="#home"
             ><i style="color: #ff7b00" class="fa-brands fa-free-code-camp"></i>
             V<span>D</span></a
           >
@@ -164,10 +169,10 @@
             <a
               target="_blank"
               href="https://www.linkedin.com/in/varad-dhumale-0abb68255/"
-              ><i    id="linked" class="fa-brands a fa-linkedin-in"></i
+              ><i id="linked" class="fa-brands a fa-linkedin-in"></i
             ></a>
             <a target="_blank" href="https://github.com/varad177"
-              ><i    id="git" class="fa-brands a fa-github"></i
+              ><i id="git" class="fa-brands a fa-github"></i
             ></a>
             <a target="_blank" href="https://wa.link/fll4sc"
               ><i id="wp" class="fa-brands a fa-whatsapp"></i
@@ -175,33 +180,28 @@
             <a
               target="_blank"
               href="https://instagram.com/varad_dhumale?igshid=ZDdkNTZiNTM="
-              ><i    id="insta" class="fa-brands a fa-instagram"></i
+              ><i id="insta" class="fa-brands a fa-instagram"></i
             ></a>
             <a
               target="_blank"
               href="https://www.facebook.com/varad.dhumale.771?mibextid=ZbWKwL"
-              ><i    id="fb" class="fa-brands a  fa-facebook"></i
+              ><i id="fb" class="fa-brands a fa-facebook"></i
             ></a>
             <a href="mailto:varaddhumale177@gmail.com"
-              ><i    id="gmail" class="fa-regular a fa-envelope"></i
+              ><i id="gmail" class="fa-regular a fa-envelope"></i
             ></a>
           </div>
         </div>
-
 
         <div class="homeimg">
           <section class="box-panel">
             <div class="widget-container">
               <div class="flip-box a common-flip-style">
                 <div class="box-front common-box-style">
-                  <div class="box-content-wrapper">
-                    
-                  </div>
+                  <div class="box-content-wrapper"></div>
                 </div>
                 <div class="box-back common-box-style box-bgi-effect">
-                  <div class="box-content-wrapper">
-                   
-                  </div>
+                  <div class="box-content-wrapper"></div>
                 </div>
               </div>
             </div>
@@ -214,7 +214,7 @@
       <!-- about sec start -->
 
       <section class="about" id="about">
-        <div class="aboutHeading">
+        <div class="aboutHeading" id="aboutHeading">
           <h1 class="head">About <span style="color: #ff7b00">Me</span></h1>
         </div>
         <div class="aboutElement">
@@ -225,7 +225,7 @@
             <h2>I am Varad Dhumale</h2>
 
             <h5>MERN stack Developer</h5>
-            <p style="font-weight: bold; text-align: center">
+            <p class="aboutText" style="font-weight: bold; text-align: center">
               hii! i am MERN-Stack-Web Developer living in Mumbai-Dombivli (w).
               I am a computer engineering Undergraduate student from DMCE
               Airoli. The Member of CSI-DMCE Tech and Developement team. I am
@@ -258,7 +258,7 @@
       <!-- skill section shart -->
 
       <section class="skill" id="skill">
-        <div class="skillsheading aboutHeading head">
+        <div class="skillsheading aboutHeading head" id="skillsheading">
           <h2 style="color: white">
             <i class="fa-solid fa-laptop"></i> Skills &
             <span style="color: #ffd700">Abilities</span>
@@ -386,10 +386,10 @@
       <!-- education section start -->
 
       <section class="education" id="education">
-        <div class="aboutHeading educationheading">
+        <div class="aboutHeading educationheading" id="eduheading">
           <h1 class="head">My <span style="color: #ff7b00">Education</span></h1>
         </div>
-        <div class="card mb-2 educard" style="width: 80%">
+        <div class="card mb-2 educard1" style="width: 80%">
           <div class="row g-1">
             <div class="col-md-3 eduimg">
               <img
@@ -407,7 +407,7 @@
             </div>
           </div>
         </div>
-        <div class="card mb-2 educard" style="width: 80%">
+        <div class="card mb-2 educard educard2" style="width: 80%">
           <div class="row g-1">
             <div class="col-md-3 eduimg">
               <img
@@ -425,7 +425,7 @@
             </div>
           </div>
         </div>
-        <div class="card mb-2 educard" style="width: 80%">
+        <div class="card mb-2 educard educard3" style="width: 80%">
           <div class="row g-1">
             <div class="col-md-3 eduimg">
               <img
@@ -450,7 +450,7 @@
       <!-- projects section start -->
 
       <section class="projects" id="projects">
-        <div class="aboutHeading educationheading">
+        <div class="aboutHeading educationheading" id="projectheading">
           <h1 style="color: white" class="head">
             My <span style="color: #e74c3c">Projects</span>
           </h1>
@@ -1749,7 +1749,7 @@
       <!-- contach sec start -->
 
       <section class="contact" id="contact">
-        <div class="aboutHeading educationheading">
+        <div class="aboutHeading educationheading" id="contactheading">
           <h1 style="color: black" class="head">
             Contact <span style="color: #e74c3c">Me</span>
           </h1>
@@ -1808,9 +1808,7 @@
           </div>
         </div>
         <div class="letsChat">
-          <a target="_blank" href="https://wa.link/fll4sc"
-            >Give Your Feedback About Website 😚</a
-          >
+          <a target="_blank" href="https://wa.link/fll4sc">Lets Chat 😚</a>
         </div>
       </section>
 
@@ -1820,7 +1818,7 @@
 
       <section class="footer" id="footer">
         <div class="footerContent">
-          <div class="aabhar">
+          <div class="aabhar footer1">
             <h3>VARAD'S PORTFOLIO</h3>
             <br /><br />
             <p>
@@ -1830,7 +1828,7 @@
               <span>&#128591;</span>
             </p>
           </div>
-          <div class="quickLinks">
+          <div class="quickLinks footer2">
             <h3>QUICK LINKS</h3>
             <br />
             <a class="" href="#home">
@@ -1858,7 +1856,7 @@
             >
             <br />
           </div>
-          <div class="contactInfo">
+          <div class="contactInfo footer3">
             <h3>CONTACT INFO</h3>
             <br /><br />
             <p><i class="fa-solid fa-phone"></i> 8407936701</p>
@@ -1903,27 +1901,26 @@
         </div>
         <div id="progress-container">
           <div id="progress-bar"></div>
-      </div>
-       
+        </div>
       </section>
-
-      
     </div>
 
     <!-- footer sec end  -->
-    <div id="back-to-top-container" title="Move To Top" class="scrollup">
-      <div id="back-to-top-button">
-         
-          <i class="fa-solid fa-arrow-up"></i>
-      </div>
-  </div>
 
     <!-- scroll top btn -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- scripts -->
     <script src="tech/particles.js"></script>
@@ -1942,9 +1939,6 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script src="./js/gsap.js"></script>
-   <script src="./js/script.js"></script>
-
- 
-
+    <script src="./js/script.js"></script>
   </body>
 </html>
