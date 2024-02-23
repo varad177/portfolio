@@ -138,13 +138,13 @@
 
       <div class="homecontainer">
         <div class="hometext">
-          <h2 class="homewords">
+          <h2 class="homewords a">
             <span id="greet"></span> <span class="wave">👋</span> IT'S ME
           </h2>
-          <h1 class="homewords">VARAD , I'M A</h1>
-          <h2 class="homewords"><span class="multipletext"></span></h2>
+          <h1 class="homewords a">VARAD , I'M A</h1>
+          <h2 class="homewords a"><span class="multipletext"></span></h2>
 
-          <div class="towardsAbout">
+          <div class="towardsAbout a">
             <div class="link_towardsAbout">
               <a href="#about">About Me</a>
               <div class="icon">
@@ -164,55 +164,43 @@
             <a
               target="_blank"
               href="https://www.linkedin.com/in/varad-dhumale-0abb68255/"
-              ><i id="linked" class="fa-brands fa-linkedin-in"></i
+              ><i    id="linked" class="fa-brands a fa-linkedin-in"></i
             ></a>
             <a target="_blank" href="https://github.com/varad177"
-              ><i id="git" class="fa-brands fa-github"></i
+              ><i    id="git" class="fa-brands a fa-github"></i
             ></a>
             <a target="_blank" href="https://wa.link/fll4sc"
-              ><i id="wp" class="fa-brands fa-whatsapp"></i
+              ><i id="wp" class="fa-brands a fa-whatsapp"></i
             ></a>
             <a
               target="_blank"
               href="https://instagram.com/varad_dhumale?igshid=ZDdkNTZiNTM="
-              ><i id="insta" class="fa-brands fa-instagram"></i
+              ><i    id="insta" class="fa-brands a fa-instagram"></i
             ></a>
             <a
               target="_blank"
               href="https://www.facebook.com/varad.dhumale.771?mibextid=ZbWKwL"
-              ><i id="fb" class="fa-brands fa-facebook"></i
+              ><i    id="fb" class="fa-brands a  fa-facebook"></i
             ></a>
             <a href="mailto:varaddhumale177@gmail.com"
-              ><i id="gmail" class="fa-regular fa-envelope"></i
+              ><i    id="gmail" class="fa-regular a fa-envelope"></i
             ></a>
           </div>
         </div>
 
-        <!-- <div class="homeimg">
-        <img draggable="false" class="tilt" src="assets/bitmojivarad.jpeg" alt="" style="
-              will-change: transform;
-              transform: perspective(1000px) rotateX(1.06deg) rotateY(-5.82deg)
-                scale3d(1, 1, 1);
-            " />
-      </div> -->
+
         <div class="homeimg">
           <section class="box-panel">
             <div class="widget-container">
-              <div class="flip-box common-flip-style">
+              <div class="flip-box a common-flip-style">
                 <div class="box-front common-box-style">
                   <div class="box-content-wrapper">
-                    <!-- 					<div class="box-content">
-              <h1>Hello there !</h1>
-              <p>I am the <strong>front side</strong> of the box.</p>
-            </div> -->
+                    
                   </div>
                 </div>
                 <div class="box-back common-box-style box-bgi-effect">
                   <div class="box-content-wrapper">
-                    <div class="box-content">
-                      <h1>I Am</h1>
-                      <h2>Happy To See You Here</h2>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -1916,19 +1904,10 @@
         <div id="progress-container">
           <div id="progress-bar"></div>
       </div>
-        <!-- <div class="visit">
-        <a href='https://www.free-counters.org/'>https://www.free-counters.org/</a>
-        <script type='text/javascript'
-          src='https://www.freevisitorcounters.com/auth.php?id=6f6bd3f90e79da81ec9b41f126d373c14a2ddbd2'></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1060232/t/3"></script>
-      </div> -->
+       
       </section>
 
-      <!-- 
-        <div class="scrollTop">
-    
-        </div>
-     -->
+      
     </div>
 
     <!-- footer sec end  -->
@@ -1941,12 +1920,10 @@
 
     <!-- scroll top btn -->
 
-    <script type="text/javascript">
-      VanillaTilt.init(document.querySelector(".myimg"), {
-        max: 25,
-        speed: 400,
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
     <!-- scripts -->
     <script src="tech/particles.js"></script>
@@ -1964,121 +1941,10 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <script type="text/javaScript">
+    <script src="./js/gsap.js"></script>
+   <script src="./js/script.js"></script>
 
-      window.addEventListener('scroll', function() {
-              let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-              let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-              let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
-              let scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
-              document.getElementById('progress-bar').style.width = scrolled + '%';
+ 
 
-           
-          });
-
-          // Scroll to top functionality
-          document.getElementById('back-to-top-button').addEventListener('click', function() {
-              window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth'
-              });
-          });
-
-                                        const typed = new Typed('.multipletext', {
-                                            strings: ['MERN Stack Developer', 'Coder', 'Web Designer'],
-                                            typeSpeed: 60,
-                                            backSpeed: 30,
-                                            backDelay: 800,
-                                            loop: true
-                                        });
-
-                                              ScrollReveal({
-                                                  reset: true,
-                                                  distance: '50px',
-                                                  duration: 1500,
-                                                  delay: 300
-                                              })
-                                              //  ScrollReveal().reveal('.homewords , .contactImg ', { delay: 300, origin: 'bottom' });
-                                              //  ScrollReveal().reveal('.towardsAbout, .abtimg ,.aabhar, .quickLinks ', { delay: 300, origin: 'bottom' });
-                                              //  ScrollReveal().reveal('.socialIcons , .contactInfo,.EndOfWebsite ', { delay: 300, origin: 'bottom' });
-                                              //  ScrollReveal().reveal('.tilt , .aboutContent , .educard', { delay: 300, origin: 'bottom' });
-                                              //  ScrollReveal().reveal('.head , .letsChat', { delay: 100, origin: 'bottom' });
-                                               ScrollReveal().reveal('.homewords  ', { delay: 300, origin: 'bottom' });
-                                               ScrollReveal().reveal('.socialIcons , .tilt', { delay: 300, origin: 'bottom' });
-
-
-
-
-
-
-
-                                              // function sendEmail() {
-                                              //     alert("sorry || back-end is not ready || click on 'Lets Talk' ")
-                                              // }
-
-                                              function sendEmail() {
-
-                                                   var email = document.getElementById('inputEmail4').value;
-                                                  var fname = document.getElementById('fname').value;
-                                                  var lname = document.getElementById('lname').value;
-                                                  var email2 = email.toLowerCase();
-                                                  var b = document.getElementById('msg').value;
-                                                  var body = 'name : ' + fname +'-'+ lname+'<br/><br/> email : ' +email2 +'<br/><br/> message :' + b  ;
-
-                                                  Email.send({
-                                                      Host: "smtp.elasticemail.com",
-                                                      Username: "fakeacc6862@gmail.com",
-                                                      Password: "47E85993DC7394854F4E87B9F47289D636F1",
-                                                      // To: 'fakeacc6862@gmail.com',
-                                                       To: 'varaddhumale177@gmail.com',
-                                                      From:'fakeacc6862@gmail.com' ,
-                                                      Subject: "New message from portfolio",
-                                                      Body: body
-                                                  }).then(
-                                                      // message => alert(message)
-                                                       message => alert('Thanks For FeedBack/Message ||😊 SubMit Successfully')
-                                                  );
-
-
-                                              }
-
-                                            //   the greeting function
-                                              let date = new Date()
-                                      var hrs = date.getHours();
-
-
-                                      var msg;
-                                      if (hrs < 12) {
-                                          msg = "Good Morning"
-                                      } else if (hrs >= 12 && hrs <= 17) {
-                                          msg = "Good Afternoon"
-                                      } else if (hrs >= 17 && hrs <= 24) {
-                                          msg = "Good Evening"
-                                      }
-
-                                      document.getElementById('greet').innerHTML = msg;
-
-                                        const backToTopContainer = document.getElementById("back-to-top-container");
-
-
-
-
-
-              // navbar  hide
-
-              const nav = document.getElementById('navbarSupportedContent')
-              const hanbtn = document.getElementById('hamBTN')
-
-              function hideNav(){
-
-                nav.classList.remove('show')
-
-              }
-    </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-
-    <script src="js/index.js"></script>
   </body>
 </html>

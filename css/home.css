@@ -462,14 +462,7 @@
 		transform: rotateX(0) rotateY(-180deg);
 		background: #000000;
 	}
-	&:hover{
-		.box-front{
-			transform: rotateX(0) rotateY(180deg);
-		}
-		.box-back{
-			transform: none;
-		}
-	}
+
 }
 
 .box-content-wrapper{
