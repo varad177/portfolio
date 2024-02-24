@@ -279,3 +279,20 @@ gsap.from(".footer3", {
     toggleActions: "play none none none",
   },
 });
+
+function flyToTop() {
+    gsap.to("#back-to-top-button img", {
+      y: -900,
+      scale: 2, // Scale down the image to 50%
+      duration: 2, 
+      onComplete: function() {
+        window.scrollTo(0, 0); 
+        gsap.to("#back-to-top-button img", {
+          y: 0, 
+          rotation: 0, 
+          scale: 1, // Reset the scale back to original
+          duration: 0 
+        });
+      }
+    });
+  }
