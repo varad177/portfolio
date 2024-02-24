@@ -325,7 +325,7 @@ body::-webkit-scrollbar-thumb {
 #back-to-top-container {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+
   border: 2px solid transparent; /* Initial transparent border */
   border-radius: 50%; /* Rounded shape */
  
@@ -368,7 +368,7 @@ body::-webkit-scrollbar-thumb {
 
 .scrollup {
     position: fixed;
-  right: 0.8rem;
+  right: 0.5rem;
   bottom: 2rem;
   border-radius: 100%;
 }
