@@ -194,6 +194,11 @@
   .twoSkillsBox {
     width: 100%;
   }
+  #back-to-top-container {
+    right: -10px;
+  
+  }
+  
 }
 
 @media (max-width: 435px) {
