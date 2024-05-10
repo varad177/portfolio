@@ -280,23 +280,23 @@
 //   },
 // });
 
-// function flyToTop() {
-//     gsap.to("#back-to-top-button img", {
-//       y: -900,
-//       scale: 2, 
-//       duration: 2, 
-//       onUpdate: function() {
-//         document.getElementById("rocket").src = "./assets/rocket.png";
-//       },
-//       onComplete: function() {
-//         window.scrollTo(0, 0); 
-//         document.getElementById("rocket").src = "./assets/rocketfireless.png";
-//         gsap.to("#back-to-top-button img", {
-//           y: 0, 
-//           rotation: 0, 
-//           scale: 1, 
-//           duration: 0 
-//         });
-//       }
-//     });
-//   }
+function flyToTop() {
+    gsap.to("#back-to-top-button img", {
+      y: -900,
+      scale: 2, 
+      duration: 2, 
+      onUpdate: function() {
+        document.getElementById("rocket").src = "./assets/rocket.png";
+      },
+      onComplete: function() {
+        window.scrollTo(0, 0); 
+        document.getElementById("rocket").src = "./assets/rocketfireless.png";
+        gsap.to("#back-to-top-button img", {
+          y: 0, 
+          rotation: 0, 
+          scale: 1, 
+          duration: 0 
+        });
+      }
+    });
+  }
