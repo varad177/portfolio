@@ -86,3 +86,17 @@ const hanbtn = document.getElementById("hamBTN");
 function hideNav() {
   nav.classList.remove("show");
 }
+
+
+var exampleModal2 = document.getElementById('exampleModal2');
+exampleModal2.addEventListener('show.bs.modal', function (event) {
+  var button = event.relatedTarget;
+  var title = button.getAttribute('data-title');
+  var imgSrc = button.getAttribute('data-img');
+  
+  var modalTitle = exampleModal2.querySelector('.modal-title');
+  var modalImage = exampleModal2.querySelector('#certificateImage');
+  
+  modalTitle.textContent = title;
+  modalImage.src = imgSrc;
+});

@@ -1,0 +1,16 @@
+.certificate {
+  width: 150px;
+  height: 300px;
+}
+.certificateImg {
+  width: 100%;
+  height: 100%;
+}
+
+.modalbtn{
+    height: 180px !important;
+    width: 100%;
+}
+.trophy{
+    color:  rgb(255, 173, 41);
+}
