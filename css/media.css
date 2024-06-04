@@ -28,6 +28,11 @@
   .aboutimg img {
     width: 100%;
   }
+  
+.modalbtn{
+  height: 120px !important;
+  width: 100%;
+}
 
   
 }
