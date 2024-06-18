@@ -21,7 +21,7 @@ document
   });
 
 const typed = new Typed(".multipletext", {
-  strings: ["MERN Stack Developer", "Coder", "Web Designer"],
+  strings: ["Full Stack Developer", "Coder", "Web Designer"],
   typeSpeed: 60,
   backSpeed: 30,
   backDelay: 800,
